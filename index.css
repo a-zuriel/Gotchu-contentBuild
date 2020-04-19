@@ -55,3 +55,123 @@ body {
     margin-left: 20px;
     padding: 5px;
 }
+
+/*Curriculm style*/
+.curicbackground{
+    background-image: url(curicimages/gotchubackgroundgradient.png);
+}
+.curicheader{
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:30px;
+    font-size:40pt;
+}
+.curicsecondheader{
+    text-align:center;
+    padding-left:400px;
+    padding-right:400px;
+    font-size:18pt;
+    padding-bottom:30pt;
+        
+    
+}
+.curicpinkbox{
+    width:420px;
+    height:504px;
+    
+    
+}
+.curicgraybox{
+    margin-left:40px; 
+    width:420px;
+    height:504px;
+}
+.curicorangebox{
+    margin-left:40px;
+    width:420px;
+    height:504px;
+    
+}
+.curicvidboxes{
+    position:relative;
+    width:1350px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.curicplaceholderb{
+    position:absolute;
+    top:20px;
+    left:15px;
+    width: 390px;
+    height:190px;
+    background-color:black;
+    
+    
+}
+.curicplaceholderb2{
+     position:absolute;
+    top:20px;
+    left:480px;
+    width: 390px;
+    height:190px;
+    background-color:black;
+}
+.curicplaceholderb3{
+     position:absolute;
+    top:20px;
+    right:16px;
+    width: 390px;
+    height:190px;
+    background-color:black;
+}
+.curictextbox{
+    top:200px;
+    position: absolute;
+    left:15px;
+}
+.curicminitext{
+    padding-right:940px;
+}
+.curicbeginbutton{
+    font-size:16pt;
+    width:100px;
+    height:30px;
+    padding-top:3px;
+    text-align: center;
+    border:solid white 2px;
+    border-radius: 20px;
+    color:white;
+    
+        
+}
+.curicbeginbutton:hover{
+    background-color:white;
+    color:rgb(239,149,131);
+}
+#curicbeginbutpos{
+    position: absolute;
+/*    left:140px;*/
+}
+.curictextbox2{
+    top:200px;
+    position: absolute;
+    left:480px; 
+}
+.curicminitext2{
+    padding-right:500px;
+}
+#curicbeginbutpos2{
+    
+}
+.curictextbox3{
+    top:200px;
+    position: absolute;
+    left:942px; 
+}
+.curicminitext3{
+   padding-right:20px;
+}
+#curicbeginbutpos3{
+    
+}
+/*end Curriculm style*/
