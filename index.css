@@ -30,10 +30,17 @@ body {
     padding: 10px;
     margin-left: 25px;
     background-color: rgba(255, 255, 255, 0.2);
-
+    text-decoration: none;
     border-radius: 20px;
     margin: 10px;
     margin-right: 20px;
+
+}
+
+.navitem a {
+    text-decoration: none;
+    color: black;
+
 }
 
 .navitem:hover{
@@ -55,3 +62,74 @@ body {
     margin-left: 20px;
     padding: 5px;
 }
+
+.titleitem a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Miles content Styling */
+
+.meet{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #ED7358;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.oneliner{
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 200px;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+.everybody{
+    width: 80%;
+    margin: auto;
+}
+.person{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 25%;
+    float: left;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: #ED7358;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.newsimage{
+    width: 95%;
+    padding: 1%;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.picstory{
+    width: 100%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/*  */
