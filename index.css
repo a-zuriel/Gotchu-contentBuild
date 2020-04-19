@@ -175,3 +175,68 @@ body {
     
 }
 /*end Curriculm style*/
+
+/* Testimonials style*/
+    #testtitle {
+        padding-top: 20px;
+        margin-left: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .testcontainer {
+        width: 70%;
+        margin: auto;
+        background-color: #ED7358;
+        background: linear-gradient(180deg, #ED7358 10%, #e68a75 100%);
+        margin-bottom: 40px;
+        color: white;
+        padding: 30px;
+        padding-bottom: 100px;
+        border-radius: 30px;
+    }
+    
+    .testname {
+        font-size: 20pt;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .testquoteleft {
+        font-family: serif;
+        font-size: 100pt;
+        padding-top: 50px;
+        line-height: 20pt;
+        opacity: 0.3;
+    }
+    
+    .testquoteright {
+        font-family: serif;
+        font-size: 100pt;
+        float: right;
+        opacity: 0.3;
+    }
+    
+    .testquotebody {
+        margin: auto;
+        width: 80%;
+    }
+    .testpic {
+        width: 90px;
+        float: right;
+        position: relative;
+        top: -38px;
+        z-index: 1;
+    }
+    .testnavbar {
+        list-style-type: none;
+        list-style: none;
+        background-color: #ED7358;
+        margin: 0px;
+        overflow: hidden;
+        top: 0px;
+        position: fixed;
+        width: 100%;
+        border-bottom: solid 1px white;
+        z-index: 10;
+    }
+/* end Testimonials style*/
