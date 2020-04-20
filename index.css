@@ -46,7 +46,7 @@ body {
     color: black;
     background-color: rgba(255, 255, 255, 0.8);
     border-bottom: solid 2px #ED7358;
-    
+
 
 
 }
@@ -63,78 +63,187 @@ body {
     padding: 5px;
 }
 
-.titleitem a {
-    text-decoration: none;
-    color: #ED7358;
+/*Curriculm style*/
+.curicbackground{
+    background-image: url(curicimages/gotchubackgroundgradient.png);
 }
-
-
-/* Miles content Styling */
-
-.meet{
-    font-size: 50px;
-    font-weight: bolder;
-    color: #ED7358;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-}
-
-.oneliner{
-    font-size: 38px;
-    font-weight: bold;
-    margin-top: 200px;
-    width: 800px;
-    margin: auto;
+.curicheader{
     text-align: center;
-    line-height: 50px;
+    padding-top:30px;
+    padding-bottom:30px;
+    font-size:40pt;
 }
+.curicsecondheader{
+    text-align:center;
+    padding-left:400px;
+    padding-right:400px;
+    font-size:18pt;
+    padding-bottom:30pt;
 
-.everybody{
-    width: 80%;
-    margin: auto;
+
 }
-.person{
-    font-family: 'Source Sans Pro', sans-serif;
-    width: 25%;
-    float: left;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    background-color: #ED7358;
-    color: white;
-    border-radius: 10px;
+.curicpinkbox{
+    width:420px;
+    height:504px;
+
+
+}
+.curicgraybox{
+    margin-left:40px;
+    width:420px;
+    height:504px;
+}
+.curicorangebox{
+    margin-left:40px;
+    width:420px;
+    height:504px;
+
+}
+.curicvidboxes{
+    position:relative;
+    width:1350px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.curicplaceholderb{
+    position:absolute;
+    top:20px;
+    left:15px;
+    width: 390px;
+    height:190px;
+    background-color:black;
+
+
+}
+.curicplaceholderb2{
+     position:absolute;
+    top:20px;
+    left:480px;
+    width: 390px;
+    height:190px;
+    background-color:black;
+}
+.curicplaceholderb3{
+     position:absolute;
+    top:20px;
+    right:16px;
+    width: 390px;
+    height:190px;
+    background-color:black;
+}
+.curictextbox{
+    top:200px;
+    position: absolute;
+    left:15px;
+}
+.curicminitext{
+    padding-right:940px;
+}
+.curicbeginbutton{
+    font-size:16pt;
+    width:100px;
+    height:30px;
+    padding-top:3px;
     text-align: center;
-}
+    border:solid white 2px;
+    border-radius: 20px;
+    color:white;
 
-.newsimage{
-    width: 95%;
-    padding: 1%;
-    background-color: white;
-    margin: auto;
-    margin-top: 10px;
-}
 
-.picstory{
-    width: 100%;
-    margin: auto;
 }
-
-h1{
-    text-align: center;
-    font-size: 20px;
+.curicbeginbutton:hover{
+    background-color:white;
+    color:rgb(239,149,131);
 }
-
-h2{
-    text-align: center;
-    font-size: 15px;
+#curicbeginbutpos{
+    position: absolute;
+/*    left:140px;*/
 }
-
-#homeheader {
-    margin-top: 5em;
-    font-size: 40pt;
-    color: #ED7358;
+.curictextbox2{
+    top:200px;
+    position: absolute;
+    left:480px;
 }
+.curicminitext2{
+    padding-right:500px;
+}
+#curicbeginbutpos2{
 
-/*  */
+}
+.curictextbox3{
+    top:200px;
+    position: absolute;
+    left:942px;
+}
+.curicminitext3{
+   padding-right:20px;
+}
+#curicbeginbutpos3{
+
+}
+/*end Curriculm style*/
+
+/* Testimonials style*/
+    #testtitle {
+        padding-top: 20px;
+        margin-left: 40px;
+        margin-bottom: 50px;
+    }
+
+    .testcontainer {
+        width: 70%;
+        margin: auto;
+        background-color: #ED7358;
+        background: linear-gradient(180deg, #ED7358 10%, #e68a75 100%);
+        margin-bottom: 40px;
+        color: white;
+        padding: 30px;
+        padding-bottom: 100px;
+        border-radius: 30px;
+    }
+
+    .testname {
+        font-size: 20pt;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .testquoteleft {
+        font-family: serif;
+        font-size: 100pt;
+        padding-top: 50px;
+        line-height: 20pt;
+        opacity: 0.3;
+    }
+
+    .testquoteright {
+        font-family: serif;
+        font-size: 100pt;
+        float: right;
+        opacity: 0.3;
+    }
+
+    .testquotebody {
+        margin: auto;
+        width: 80%;
+    }
+    .testpic {
+        width: 90px;
+        float: right;
+        position: relative;
+        top: -38px;
+        z-index: 1;
+    }
+    .testnavbar {
+        list-style-type: none;
+        list-style: none;
+        background-color: #ED7358;
+        margin: 0px;
+        overflow: hidden;
+        top: 0px;
+        position: fixed;
+        width: 100%;
+        border-bottom: solid 1px white;
+        z-index: 10;
+    }
+/* end Testimonials style*/
