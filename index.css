@@ -9,6 +9,11 @@ body {
     padding: 0px;
 }
 
+.footer {
+    background-color: #7f0500;
+    margin: 0px;
+}
+
 /* this css styling is for all navbar stylings */
 
 .navbar {
