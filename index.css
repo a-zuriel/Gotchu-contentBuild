@@ -70,8 +70,13 @@ body {
 @media screen and (max-width: 920px){
 
     .titleitem a{
-        visibility: none;
+        color: black;
     }
+
+    .navitem a{
+        color: black;
+    }
+
 }
 
 #homeheader{
