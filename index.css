@@ -10,8 +10,36 @@ body {
 }
 
 .footer {
-    background-color: #7f0500;
-    margin: 0px;
+    background-color: #ED7358;
+    margin-top: 120px;
+    padding: 50px;
+    color: white;
+    font-size: 18pt;
+}
+
+.footer img {
+    width: 50px;
+
+}
+
+.footer div {
+    padding: 10px;
+}
+.footer div p {
+    display: inline;
+   
+}
+
+.footer span{
+    display: inline;
+}
+
+.handle {
+    padding-bottom: 20px;
+}
+.foottitle {
+    font-size: 30pt;
+    font-weight: bold;
 }
 
 /* this css styling is for all navbar stylings */
@@ -90,6 +118,11 @@ body {
     font-size: 50pt;
     text-align: center;
 
+}
+
+.homecontent p{
+    text-align: center;
+    color: #ED7358;
 }
 
 /* About Us Styles */
@@ -304,9 +337,10 @@ body {
     }
 
     .testname {
-        font-size: 20pt;
-        font-weight: 700;
+        font-size: 22pt;
+        font-weight: bolder;
         margin-bottom: 10px;
+
     }
 
     .testquoteleft {
@@ -327,6 +361,7 @@ body {
     .testquotebody {
         margin: auto;
         width: 80%;
+        font-size: 18pt;
     }
     .testpic {
         width: 90px;
