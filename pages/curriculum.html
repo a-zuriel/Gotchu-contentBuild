@@ -5,6 +5,15 @@
         <title>Gotchu</title>
         <link rel="stylesheet" type="text/css" href="../index.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        
+        <style>
+            .curicminitext2{
+                color:black;
+                
+            }
+        
+        </style>
+        
     </head>
 
 
@@ -19,8 +28,11 @@
 
         </nav>
         <div class="homecontent">
+            
 
-            <div class="curicbackground">
+<!--            class="curicbackground"-->
+            
+            <div >
                 <div class = "meet">
                     Curriculum
                     <hr>
@@ -29,10 +41,13 @@
                 <h2 class="curicsecondheader">This outline is a representative of what customers would see when they come visit the gotchu website. Below are several videos and examples of the different types of courses one can take. </h2>
                 
                 <div class="curicvidboxes">
+                    
+                    <div class="curichomepagebox1">
+                    
                     <img class="curicpinkbox" src= "../curicimages/pinkgrad.png">
                     <img class="curicgraybox" src="../curicimages/graygrad.png">
                     <img class="curicorangebox" src="../curicimages/orangegrad.png">
-                <div class="curicallpinkbox1">
+                <div class="curicallpinkbox1" id="curicpinkboxcontent">
                     
                     <div class="curicplaceholderb">
                         
@@ -42,7 +57,8 @@
                     <div class="curictextbox">
                         <h2 class="curicminititle">Freelancing Basics</h2>
                         
-                        <p class="curicminitext"> This is an introductory course in freelancing basics. We will cover everything from marketing yourself and your skills, to negotiating good terms for projects, to handeling financial data. Press Begin to start on your freelancing journey today! </p>
+                          <span class="curicminitext">This is an introductory course in freelancing basics. We will cover everything from marketing yourself and your skills, to negotiating good terms for projects, to handeling financial data. Press Begin to start on your freelancing journey today! </span>
+                        <br><br>
                         
                         <div class="curicbeginbutton" id="curicbeginbutpos">Begin</div>
                     
@@ -59,9 +75,9 @@
                     <div class="curictextbox2">
                         <h2>Financing</h2>
                         
-                        <p class="curicminitext2">This is an in-depth course on project financing. We will cover the basics of accounting and help you create a strategic plan to manage your pricing and accounts. Press Begin to start learning how to manage your money!  </p> 
-                        
-                        <div class="curicbeginbutton" id="curicbeginbutpos2">Begin</div>
+                        <div class="curicminitext2">This is an in-depth course on project financing. We will cover the basics of accounting and help you create a strategic plan to manage your pricing and accounts. Press Begin to start learning how to manage your money!  </div> 
+                        <br><br>
+                        <div class="curicbeginbutton1" id="curicbeginbutpos2">Begin</div>
                     
                     
                     
@@ -78,12 +94,14 @@
                     <div class="curictextbox3">
                         <h2>Building Client Relationships </h2>
                         
-                        <p class="curicminitext3">This is an indepth course on how to build effective relationships with your clients. In this course we will teach you how to communicate effectively so you can start building your personal brand. Press Begin to start building effective relationships!</p>
+                        <div class="curicminitext3">This is an indepth course on how to build effective relationships with your clients. In this course we will teach you how to communicate effectively so you can start building your personal brand. Press Begin to start building effective relationships!</div>
+                        <br>
                         
                         <div class="curicbeginbutton" id="curicbeginbutpos3">Begin</div>
                     
                     </div>
                 </div>
+            </div>
 
                    
 
@@ -94,7 +112,35 @@
                     
                     
 -->
-                    <div></div>
+                    <div id="freelancetutorial">
+                        <div class="curicpinkparent">
+                            
+                           
+                            
+                            <img id="curicpinkbackground" src="../curicimages/pinkgrad.png">
+                            <div>
+                                
+                                 <div class="curicplaceholderbig1">
+                        
+                                    <iframe width="830" height="450" src="https://www.youtube.com/embed/EjTTelvJAyU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                                </div>
+                                
+                                    <div class="curictextboxbig1">
+                                    <h2 class="curicminititlebig1">Freelancing Basics</h2>
+                        
+                                        <span class="curicminitext">This is an introductory course in freelancing basics. We will cover everything from marketing yourself and your skills, to negotiating good terms for projects, to handeling financial data. Press Begin to start on your freelancing journey today! </span>
+                                        <br><br>
+                        
+                                        <div class="curicbeginbutton" id="curicquizbutpos">Quiz</div>
+                                        <div class="curicbeginbutton" id="curicquizbutpos1">Help</div>
+                                        <div class="curicbeginbutton" id="curicquizbutpos2">Script</div>
+                                        <div class="curicbeginbutton" id="curicquizbutpos3">Back</div>
+                                    </div>
+                            </div>
+                        </div>
+                    
+                    </div>
                 
                 
                 </div>
@@ -116,8 +162,31 @@
         </div>
 
     </body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        var tutscreen(obj1){
+            
+        }
+    
+    </script>
 
     <script>
+        $(document).ready(function(){
+            $("#freelancetutorial").hide();
+        });
+        
+        document.querySelector("#curicbeginbutpos").addEventListener("click", function(){
+            $(".curichomepagebox1").addClass("curicopacity");
+            $(".meet").addClass("curicopacity");
+            $(".curicheader").addClass("curicopacity");
+            $(".curicsecondheader").addClass("curicopacity");
+            $("#freelancetutorial").fadeIn();
+            $("#freelancetutorial").css({
+                "position" : "absolute",
+                "top" : "-200px"
+            });
+        })
+        
 
     </script>
 </html>

@@ -149,6 +149,8 @@ body {
     
     font-size:18pt;
     padding-bottom:30pt;
+    margin-left:100px;
+    margin-right:100px;
 }
 .curicpinkbox{
     width:420px;
@@ -173,7 +175,7 @@ body {
     margin-left:auto;
     margin-right:auto;
     
-    height:600px;
+    height:500px;
 }
 .curicplaceholderb{
     position:absolute;
@@ -206,10 +208,16 @@ body {
     top:200px;
     position: absolute;
     left:15px;
+    
+    width:390px;
 }
 .curicminitext{
-    padding-right:50px;
+    padding-right:70px;
+    color:black;
+    
+    
 }
+
 .curicbeginbutton{
     font-size:16pt;
     width:100px;
@@ -226,6 +234,22 @@ body {
     background-color:white;
     color:rgb(239,149,131);
 }
+.curicbeginbutton1{
+    font-size:16pt;
+    width:100px;
+    height:30px;
+    padding-top:3px;
+    text-align: center;
+    border:solid white 2px;
+    border-radius: 20px;
+    color:white;
+
+
+}
+.curicbeginbutton1:hover{
+    background-color:white;
+    color:rgb(212,210,210);
+}
 #curicbeginbutpos{
     position: absolute;
 /*    left:140px;*/
@@ -237,6 +261,8 @@ body {
 }
 .curicminitext2{
     padding-right:70px;
+    width:390px;
+    border:
 }
 #curicbeginbutpos2{
 
@@ -244,7 +270,7 @@ body {
 .curictextbox3{
     top:200px;
     position: absolute;
-    left:0px;
+    left:2px;
 }
 .curicminitext3{
    padding-right:20px;
@@ -272,6 +298,65 @@ body {
     position:absolute;
     right:5px;
     top:0px;
+}
+#freelancetutorial{
+    
+    
+}
+#curicpinkbackground{
+    width:900px;
+    margin-left:220px;
+    position:absolute;
+    z-index: 1;
+}
+.curicplaceholderbig1{
+/*
+    width:600px;
+    height:300px;
+*/
+    z-index:2;
+    position:absolute;
+    top:20px;
+    left:255px;
+}
+.curicpinkparent{
+    position:relative;
+}
+.curicminititlebig1{
+    
+    font-size:30pt;
+    
+}
+.curictextboxbig1{
+    position: absolute;
+   
+    z-index:1;
+    top:480px;
+    width:600px;
+    left:255px;
+}
+#curicquizbutpos{
+    position: absolute;
+    right:-150px;
+    top:40px;
+}
+#curicquizbutpos1{
+    position: absolute;
+    right:-150px;
+    top:85px;
+}
+#curicquizbutpos2{
+    position: absolute;
+    right:-150px;
+    top:130px;
+}
+#curicquizbutpos3{
+    position:absolute;
+    right:-150px;
+    top:175px;
+}
+.curicopacity{
+    opacity: .2;
 }
 @media screen and (max-width:750px){
     .curicheader{
