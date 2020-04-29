@@ -300,7 +300,8 @@ body {
     top:0px;
 }
 #freelancetutorial{
-    
+    position:absolute;
+    left:0px;
     
 }
 #curicpinkbackground{
@@ -308,6 +309,7 @@ body {
     margin-left:220px;
     position:absolute;
     z-index: 1;
+    height:720px;
 }
 .curicplaceholderbig1{
 /*
@@ -321,6 +323,7 @@ body {
 }
 .curicpinkparent{
     position:relative;
+    
 }
 .curicminititlebig1{
     
@@ -337,27 +340,182 @@ body {
 }
 #curicquizbutpos{
     position: absolute;
-    right:-150px;
+    right:-200px;
     top:40px;
 }
 #curicquizbutpos1{
     position: absolute;
-    right:-150px;
+    right:-200px;
     top:85px;
 }
 #curicquizbutpos2{
     position: absolute;
-    right:-150px;
+    right:-200px;
     top:130px;
 }
 #curicquizbutpos3{
     position:absolute;
-    right:-150px;
+    right:-200px;
     top:175px;
 }
 .curicopacity{
     opacity: .2;
 }
+.curicquixboxright{
+    width:430px;
+    height:720px;
+    position:absolute;
+    right:0px;
+    top:-85px;
+}
+.curicquiztext{
+    position:absolute;
+    top:-70px;
+    font-size: 30pt;
+    left:20px;
+}
+.curicquiztestknow{
+    font-size:12pt;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.curicpinkboxquestion1{
+    padding-top:10px;
+    font-size:12pt;
+    
+    padding-right:7px;
+}
+.curicpinkquestion1{
+    font-size:10pt;
+    
+    width:50px;
+    padding-top:5px;
+}
+.curicpinkquestion2{
+    font-size:10pt;
+    
+    width:250px;
+    padding-top:7px;
+}
+#curicpinksubmitbutton{
+    margin-top:15px;
+}
+.curicgreenhighlight{
+    background-color:green;
+}
+.curicquixboxright2{
+    width:430px;
+    height:720px;
+    position:absolute;
+    right:0px;
+    top:-85px;
+}
+.curichelptext{
+    position:relative;
+    z-index:1;
+    
+}
+#curicpinkboxtitle{
+    position:absolute;
+    font-size:30pt;
+}
+#curicpinkboxtitle1{
+    position:absolute;
+    font-size:50pt;
+}
+#curichelptitleoof{
+    position: absolute;
+    font-size:30pt;
+    left:20px;
+    top:-70px;
+}
+#curichelpintro{
+    position:absolute;
+    left:20px;
+}
+#curicpinkchatbot{
+    border: black 1px solid;
+    width:390px;
+    height:500px;
+    margin-left:20px;
+    position: absolute;
+    top:50px;
+    
+}
+#curicpinkhelpaskbox{
+   position: absolute;
+    left:20px;
+    top:570px;
+}
+#curicpinkhelptextbox{
+    
+}
+#curicpinkhelpaskbutton{
+    position: absolute;
+    right:25px;
+    top:570px;
+}
+.curicquixboxright3{
+    width:430px;
+    height:720px;
+    position:absolute;
+    right:0px;
+    top:-85px;
+}
+.curicpinkscriptbox{
+    z-index:1;
+    position: relative;
+}
+#curicpinkboxscript{
+    position: absolute;
+    font-size:30pt;
+    left:20px;
+    top:-70px;
+}
+.curicpinkscriptintrotext{
+    margin-left:20px;
+    padding-bottom:10px;
+}
+#curicpinkscriptminibox{
+    width:390px;
+    height:570px;
+    position: absolute;
+    left:20px;
+    border:black solid 1px;
+    overflow-x: hidden; 
+    overflow-x: auto;
+    
+}
+
+/*GRAY BOX STUFF*/
+#curicgraybackgroundfin{
+    width:900px;
+    margin-left:220px;
+    position:absolute;
+    z-index: 1;
+    height:720px;
+}
+#curicquizbutposF{
+    position: absolute;
+    right:-200px;
+    top:40px;
+}
+#curicquizbutpos1F{
+    position: absolute;
+    right:-200px;
+    top:85px;
+}
+#curicquizbutpos2F{
+    position: absolute;
+    right:-200px;
+    top:130px;
+}
+#curicquizbutpos3F{
+    position: absolute;
+    right:-200px;
+    top:175px;
+}
+
 @media screen and (max-width:750px){
     .curicheader{
         
