@@ -3,11 +3,135 @@
 <html>
     
     <style>
+          
+html {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(curicimages/gotchubackgroundgradient.png);
+    background-size: cover; 
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
+.footer {
+    background-color: #ED7358;
+    margin-top: 120px;
+    padding: 50px;
+    color: white;
+    font-size: 18pt;
+}
+
+.footer img {
+    width: 50px;
+
+}
+
+.footer div {
+    padding: 10px;
+}
+.footer div p {
+    display: inline;
+   
+}
+
+.footer span{
+    display: inline;
+}
+
+.handle {
+    padding-bottom: 20px;
+}
+.foottitle {
+    font-size: 30pt;
+    font-weight: bold;
+}
 
 /* this css styling is for all navbar stylings */
 
+.navbar {
+    list-style-type: none;
+    list-style: none;
+    background-color: white;
+    margin: 0px;
+    overflow: hidden;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 1px white;
+}
 
+.navitem {
+    transition: .2s;
+    margin: 0px;
+    float: right;
+    display: block;
+    padding: 10px;
+    margin-left: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    margin: 10px;
+    margin-right: 20px;
+
+}
+
+.navitem a {
+    text-decoration: none;
+    color: #ED7358;
+    font-weight: bold;
+
+}
+
+.navitem:hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: solid 2px #ED7358;
+}
+
+.homecontent{
+    margin-top: 60px;
+}
+
+.titleitem {
+    display: inline;
+    font-size: 30pt;
+    letter-spacing: 1.5pt;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.titleitem a{
+    text-decoration: none;
+    color: #ED7358 ;
+}
+
+@media screen and (max-width: 920px){
+
+    .titleitem a{
+        color: black;
+    }
+
+    .navitem a{
+        color: black;
+    }
+
+}
+
+#homeheader{
+    margin-top: 4em;
+    color: #ED7358;;
+    font-size: 50pt;
+    text-align: center;
+
+}
+
+.homecontent p{
+    text-align: center;
+    color: #ED7358;
+}
+
+        
         
         #outercontainer{
             margin-left: auto;
@@ -18,7 +142,8 @@
         .textboxes{
             margin-left: auto;
             margin-right: auto;
-            width: 80%;
+            background-color: white;
+            width: 70%;
             margin-top: 40px;
             margin-bottom: 40px;
         }
@@ -28,16 +153,75 @@
             width: 100%;
             
             
+            background-color: white;
             color: black;
             padding: 10px;
         }
         .headers{
             text-align: left;
-            font-size: 24pt;
-            
-            
+            font-size: 24pt; 
             
         }
+        #presentation{
+            width: 69%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            padding: 10px;
+        }
+        .slide-container{
+            max-width: 600px;
+            height: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            text-align: center;
+            position:relative;
+        }
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        .mySlides {
+            display: none;
+            width: 600px;
+            height: 350px;
+        }
+        
+        
+        .slider-image{
+            float: left;
+            margin: 0px;
+            padding: 25px;
+        }
+        .button-container{
+            top: -20px;
+            position: relative;
+        }
+        .dot{
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-radius: 5px;
+            background-color: black;
+            cursor: pointer;
+            margin: 0 2px;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
         
         
     </style>
@@ -51,25 +235,109 @@
 
     <body>
         <nav class="navbar">
-            <li class="titleitem"><a href="../index.html">Gotchu</a></li>
-            <li class="navitem"><a href="./AboutUs.html">About Us</a></li>
-            <li class="navitem"><a href="./curriculum.html">Curriculum</a></li>
-            <li class="navitem"><a href="./investors.html">Investors</a></li>
-            <li class="navitem"><a href="./BusinessPlan.html">Business Plan</a></li>
-            <li class="navitem"><a href="./testimonial.html">Testimonials</a></li>
-
+            <li href="../index.html" class="titleitem">Gotchu</li>
+            <li href="../index.html" class="navitem">Home</li>
+            <li href="./AboutUs.html" class="navitem">About Us</li>
+            <li href="./curriculum.html" class="navitem">Curriculum</li>
+            <li href="./investors.html" class="navitem">Investors</li>
+            <li href="./BusinessPlan.html" class="navitem">Business Plan</li>
+            <li href="./testimonial.html" class="navitem">Testimonials</li>
         </nav>
-        <div class="investorcontent">
-
-            <div class = "meet">
-                Investors
-                <hr>
-            </div>
+        <div class="homecontent">
 
         <div id="outercontainer">  
-
+            <h1>Investors</h1>
             
           </div>
+            <hr>
+         <div id="presentation">
+            
+            <div class="slide-container">
+                
+                <div class="mySlides fade">
+                        <img src="gotchu%20final.jpg"  >
+                </div>
+                <div class="mySlides fade">
+                        <img src="gotchu%20final%20(1).jpg"  >
+                </div>
+                <div class="mySlides fade">
+                        <img src="gotchu%20final%20(2).jpg"  >
+            
+                </div>
+                <div class="mySlides fade">
+                        <img src="gotchu%20final%20(3).jpg"  >
+              
+                </div>
+                <div class="mySlides fade">
+                        <img src="gotchu%20final%20(4).jpg"  >
+                </div>
+                <div class="mySlides fade">
+                        <img src="gotchu%20final%20(5).jpg"  >
+                   
+                </div>
+                <div class="mySlides fade">
+                        <img src="gotchu%20final%20(6).jpg"  >
+                </div>
+                <div class="mySlides fade">
+                        <img src="gotchu%20final%20(7).jpg"  >
+                </div>
+                <div class="mySlides fade">
+                        <img src="gotchu%20final%20(8).jpg"  >
+                </div>
+                <div class="mySlides fade">
+                        <img src="gotchu%20final%20(9).jpg"  >
+                </div>
+                <div class="mySlides fade">
+                        <img src="gotchu%20final%20(10).jpg"  >
+                </div>
+                
+            </div>
+            <div class="button-container">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(7)"></span> 
+                    <span class="dot" onclick="currentSlide(8)"></span> 
+                    <span class="dot" onclick="currentSlide(9)"></span> 
+                    <span class="dot" onclick="currentSlide(10)"></span> 
+                    <span class="dot" onclick="currentSlide(11)"></span> 
+                
+            </div>
+            
+            </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+        </script>
+            
+        <br>
             
         <div class="textboxes">
         <div class="boxes">
@@ -114,7 +382,7 @@ We understand that this could increase our liability, and we will be evaluating 
             
         </div>
 
-        <div class="footer">
+         <div class="footer">
             <p class="foottitle">Gotchu</p>
             <div><span><img src="../icons/instagram-logo copy.png"> </span>
             <span class="handle">@Gotchu</span></div>
@@ -126,9 +394,11 @@ We understand that this could increase our liability, and we will be evaluating 
 
         </div>
 
+        
     </body>
 
     <script>
 
     </script>
 </html>
+
