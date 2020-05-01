@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="../index.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
     <style>
         .BusinessContent {
@@ -38,7 +40,7 @@
 
         </nav>
 
-                    <div class = "meet">
+            <div class = "meet">
                 Business Plan
                 <hr>
             </div>
@@ -95,6 +97,58 @@
                 
                 <p>In terms of our funding requirements, it is our goal to raise $25,0000-$50,000 within the next year, $100,000 the following year, and scaling upwards based on need and sales from then on out. The funds would go towards not only building and maintaining the Gotchu platform, but also be employed for marketing, partnerships with corporate brands, and the employment of software development professionals to enhance the product’s ability to help new freelancers achieve their goals (incorporate AI, machine learning, etc... ). 
 </p>
+                
+                 <div class="container">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                
+                <script>
+                    let myChart = document.getElementById('myChart').getContext('2d');
+
+                    Chart.defaults.global.defaultFontSize = 18;
+                    Chart.defaults.global.defaultFontColor = '#777';
+
+                    let gotchuFinancial = new Chart(myChart, {
+                      type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+                      data: {
+                        datasets: [{
+                            label: 'Gross Profit',
+                            data: [12064, 7468, 7450, 4893, 4100],
+                            backgroundColor:['rgba(255,99,132,.8)']
+                        }, {
+                            label: 'Operating Income',
+                            data: [11064, -7340, 6950, -12914, 3600],
+                            backgroundColor:['rgba(0,99,132,.8)']
+                        },
+
+                            {
+                            label: 'Revenue',
+                            data: [112250, 12775, 7600, 5925, 4100],
+                            backgroundColor:['rgba(54,162,235,.6)']
+                        }],
+                        labels:['6 Months','18 Months', '36 Months', '48 Months', '60 Months'],
+                          borderWidth:1,
+                          borderColor:'#777',
+                          hoverBorderWidth:3,
+                          hoverBorderColor:'#000'
+
+                    },
+                        options:{
+                        title:{
+                          display:true,
+                          text:'Gotchu Revenue and Profit Base Case',
+                          fontSize:25
+                        },
+                        legend:{
+                          display:true,
+                          position:'right',
+                          labels:{
+                            fontColor:'#000'
+                          }
+                        }     
+                      }
+                    });
+                  </script>
             </div>
             
             <div class="section">
