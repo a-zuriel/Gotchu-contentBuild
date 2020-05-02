@@ -515,7 +515,251 @@ body {
     right:-200px;
     top:175px;
 }
+.curicgrayquizbox{
+    
+}
+.curicgrayquizboxright{
+    width:430px;
+    height:720px;
+    position:absolute;
+    right:0px;
+    top:-170px;
+}
+.curicgrayquizboxtext{
+/*    z-index:1;*/
+    position: relative;
+    
+    
+}
+.curicgrayboxtext{
+    position: absolute;
+    top:-660px;
+    right:320px;
+    
+    
+    font-size:40px;
+    
+}
+.curicgrayquizintro{
+    position: absolute;
+    top:-600px;
+    right:60px;
+}
+.curicgrayquizquestions{
+    position: absolute;
+    top:-570px;
+    right:20px;
+    width:390px;
+    height:550px;
+    
+}
+#curicgraysubmitbutton{
+    position: absolute;
+    top:-10px;
+    right:307px;
+}
+.curicgrayhelpboxtitle{
+    font-size:40px;
+    position: absolute;
+    right:320px;
+    top:-150px;
 
+}
+.curicgrayhelpintro{
+    
+    width:390px;
+    position: absolute;
+    right:20px;
+    top:-90px;
+}
+.curicgrayhelpchatbox{
+    position: absolute;
+    width: 390px;
+    border: black 1px solid;
+    height:500px;
+    right:18px;
+    top:-30px;
+
+}
+#curicgrayhelptextbox{
+    
+    
+    
+}
+#curicpinkhelpaskbox{
+    position: absolute;
+    left:945px;
+    top:485px;
+        
+    
+    
+}
+#curicgrayhelpaskbutton{
+    position: absolute;
+    right:20px;
+    bottom:-20px;
+}
+.curicgrayscriptboxtitle{
+    font-size:30pt;
+    position: absolute;
+    right:295px;
+    top:-150px;
+}
+.curicgrayscriptintro{
+    position: absolute;
+    right:230px;
+    top:-90px;
+}
+.curicgrayscriptscrollbox{
+    position: absolute;
+    width: 390px;
+    border: black 1px solid;
+    height:500px;
+    right:18px;
+    top:-30px;
+    overflow-x: hidden; 
+    overflow-x: auto;
+    
+}
+/*ORAGNE BOX STUFF ORANGE BOX STUFF*/
+#curicorangebackgroundfin{
+    width:900px;
+    margin-left:220px;
+    position:absolute;
+    z-index: 1;
+    height:720px;
+}
+.curicclienttemplate{
+    position: relative;
+}
+.curicplaceholderbig1orange{
+    position: absolute;
+    z-index: 1;
+    left:255px;
+    top:-150px;
+    
+}
+.curictextboxbigorange1{
+    position: absolute;
+    z-index: 1;
+/*    border: black solid 1px;*/
+    width:750px;
+    top:300px;
+    left:250px;
+}
+    /*Buttons on orange home screen*/
+#curicquizbutposC{
+    position: absolute;
+    right:-90px;
+    top:40px;
+}
+#curicquizbutpos1C{
+   position: absolute;
+   right:-90px;
+   top:85px; 
+}
+#curicquizbutpos2C{
+   position: absolute;
+   right:-90px;
+   top:130px; 
+}
+#curicquizbutpos3C{
+   position: absolute;
+   right:-90px;
+   top:175px; 
+}
+.curicorangequizboxright{
+    width:430px;
+    height:720px;
+    position:absolute;
+    right:0px;
+    top:-170px;
+}
+.curicorangeboxtext{
+    position: absolute;
+    top:-160px;
+    right:320px;
+    font-size:40px;
+}
+.curicgrayorangeintro{
+    position: absolute;
+    right:0px;
+    right:60px;
+    top:-100px;
+    
+}
+.curicgrayorangequestions{
+    position: absolute;
+    top:-70px;
+    right:20px;
+    width:390px;
+    height:550px;
+    
+}
+#curicorangesubmitbutton{
+    right:310px;
+    position: absolute;
+    bottom:-30px;
+}
+.curicorangehelpboxtitle{
+    position: absolute;
+    top:-160px;
+    right:320px;
+    font-size:40px;
+}
+.curicorangehelpintro{
+    width:390px;
+    position: absolute;
+    right:20px;
+    top:-90px;
+}
+.curicorangehelpchatbox{
+    position: absolute;
+    width: 390px;
+    border: black 1px solid;
+    height:500px;
+    right:18px;
+    top:-30px;
+}
+#curicorangehelpaskbox{
+    right:154px;
+    position: absolute;
+    bottom:-20px;
+        
+}
+#curicorangehelpaskbutton{
+    right:20px;
+    position: absolute;
+    bottom:-20px;
+}
+/*Orange Script */
+.curicorangescriptboxtitle{
+    position: absolute;
+    right:295px;
+    top:-155px;
+    font-size:40px;
+}
+.curicorangescriptintro{
+    position: absolute;
+    right:230px;
+    top:-100px;
+    
+}
+.curicoragnescriptscrollbox{
+    position: absolute;
+    width: 390px;
+    border: black 1px solid;
+    height:500px;
+    right:18px;
+    top:-30px;
+    overflow-x: hidden; 
+    overflow-x: auto;
+
+}
+
+
+
+/*Curriculum Media Query begins here */
 @media screen and (max-width:750px){
     .curicheader{
         
