@@ -5,6 +5,7 @@
         <title>Gotchu</title>
         <link rel="stylesheet" type="text/css" href="../index.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="t-scroll.min.css">
     </head>
 
 
@@ -24,7 +25,7 @@
                 Testimonials
                 <hr>
             </div>
-            <div class="testcontainer">
+            <div class="testcontainer fadeUp">
                 <div class="testname">Sarah M.</div>
                 <img src="../testimages/sarah.png" class="testpic">
                 <div class="testquoteleft">&ldquo;</div>
@@ -33,7 +34,7 @@
                 </div>
                 <div class="testquoteright">&rdquo;</div>
             </div>
-            <div class="testcontainer">
+            <div class="testcontainer  fadeUp">
                 <div class="testname">Jackson F.</div>
                 <img src="../testimages/jackson.png" class="testpic">
                 <div class="testquoteleft">&ldquo;</div>
@@ -42,7 +43,7 @@
                 </div>
                 <div class="testquoteright">&rdquo;</div>
             </div>
-            <div class="testcontainer">
+            <div class="testcontainer  fadeUp">
                  <div class="testname">Olivia S.</div>
                 <img src="../testimages/Olivia.png" class="testpic">
                 <div class="testquoteleft">&ldquo;</div>
@@ -67,7 +68,10 @@
 
     </body>
 
-    <script>
-
-    </script>
+    <script type="text/javascript" src="t-scroll.min.js"></script>
+    <script type="text/javascript">
+    Tu.tScroll({
+      't-element': '.fadeUp'
+    })
+</script>
 </html>
