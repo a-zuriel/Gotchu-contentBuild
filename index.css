@@ -456,8 +456,8 @@ body {
     width:190px;
     height:2000px;
     position: absolute;
-    top:0px;
-    left:0px;
+    top:1px;
+    left:2px;
     overflow-x: hidden; 
     
 }
@@ -466,8 +466,8 @@ body {
     width:190px;
     height:2000px;
     position: absolute;
-    right:0px;
-    top:0px;
+    right:2px;
+    top:1px;
     overflow-x: hidden; 
     
 }
