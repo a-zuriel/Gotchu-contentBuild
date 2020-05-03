@@ -52,8 +52,7 @@ var textBubble = function(obj1){
         },
         success :  function(data ){
 		resultdata = data.answers[0].answer;
-		// only 1 result, so all object names directly off results/data object
-//		alert("successfully loaded data for " + data.name + " ... check console log");
+		
 		console.log(resultdata);
             
             
