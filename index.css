@@ -85,6 +85,12 @@ body {
 
 .homecontent{
     margin-top: 60px;
+    color: #ED7358;
+}
+.homecontent h2{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 25pt;
 }
 
 .titleitem {
@@ -940,3 +946,10 @@ body {
 }
 
 /* end of About us style */
+
+
+/* Investor styles - Ant */
+
+
+
+/* End of Investor - Ant */
