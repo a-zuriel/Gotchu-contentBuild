@@ -224,6 +224,32 @@ body {
             display: inline-block;
             transition: background-color 0.6s ease;
         }
+        
+/*styles fo the play button*/
+        .investplaybutton{
+            color:#ED7358;
+            
+            font-size:18pt;
+            text-align:center;
+            margin-top:20px;
+            padding-top:3px;
+            padding-bottom:3px;
+            border:#ED7358 2px solid;
+            width:150px;
+            border-radius: 20px;
+            margin-left:760px;
+            
+            
+        }
+        .investplaybutton:hover{
+            background-color: #ED7358;
+            color:RGB(230, 230, 230);
+        }
+        .audiofiles{
+            border: 1px solid black;
+            visibility: hidden;
+        }
+        
 
         
         
@@ -254,40 +280,40 @@ body {
             
             <div class="slide-container">
                 
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide0">
                         <img src="../gotchuphotos/gotchu final.jpg"  >
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide1">
                         <img src="../gotchuphotos/gotchu final (1).jpg"  >
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide2">
                         <img src="../gotchuphotos/gotchu final (2).jpg"  >
             
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide3">
                         <img src="../gotchuphotos/gotchu final (3).jpg"  >
               
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide4">
                         <img src="../gotchuphotos/gotchu final (4).jpg"  >
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide5">
                         <img src="../gotchuphotos/gotchu final (5).jpg"  >
                    
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide6">
                         <img src="../gotchuphotos/gotchu final (6).jpg"  >
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide7">
                         <img src="../gotchuphotos/gotchu final (7).jpg"  >
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide8">
                         <img src="../gotchuphotos/gotchu final (8).jpg"  >
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide9">
                         <img src="../gotchuphotos/gotchu final (9).jpg"  >
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides fade" id="investslide10">
                         <img src="../gotchuphotos/gotchu final (10).jpg">
                 </div>
                 
@@ -307,6 +333,8 @@ body {
                     <span class="dot" onclick="currentSlide(11)"></span> 
                 
             </div>
+    <!-- SLIDE ACTIVATION BUTTON -->
+            <div class="investplaybutton" id="investplaybuttonpitch">Play Pitch</div>
             
         <br>
             
@@ -352,6 +380,73 @@ We understand that this could increase our liability, and we will be evaluating 
         </div>         
             
         </div>
+<!-- AUDIO FILES ARE BELOW -->
+        <div class="audiofiles">
+            
+        <!-- audio 1 -->
+            <audio id="investgotchuslide1" controls preload>
+                <source type="audio/mp3" src="../gotchuvoiceover/gotchu%20slide%201.mp3">
+                       
+            </audio>
+            
+        <!-- audio 2 -->     
+            <audio id="investgotchuslide2" controls preload>
+                <source type="audio/mp3" src="../gotchuvoiceover/gotchu%20slide%202.mp3">
+                        
+            </audio>
+            
+        <!-- audio 3 -->     
+            <audio id="investgotchuslide3" controls preload>
+                <source type="audio/mp3" src="../gotchuvoiceover/gotchu%20slide%203.mp3">
+                        
+            </audio>
+            
+        <!-- audio 4 --> 
+            <audio id="investgotchuslide4" controls preload>
+                <source type="audio/mp3" src="../gotchuvoiceover/gotchu%20slide%204.mp3">
+                        
+            </audio>
+            
+        <!-- audio 5 -->
+            <audio id="investgotchuslide5" controls preload>
+                <source type="audio/mp3" src="../gotchuvoiceover/gotchu%20slide%205.mp3">
+                        
+            </audio>
+            
+        <!-- audio 6 --> 
+            <audio id="investgotchuslide6" controls preload>
+                <source type="audio/mp3" src="../gotchuvoiceover/gotchu%20slide%206.mp3">
+                        
+            </audio>
+            
+        <!-- audio 7 -->
+            <audio id="investgotchuslide7" controls preload>
+                <source type="audio/mp3" src="../gotchuvoiceover/gotchu%20slide%207.mp3">
+                        
+            </audio>
+            
+        <!-- audio 8 --> 
+            <audio id="investgotchuslide8" controls preload>
+                <source type="audio/mp3" src="../gotchuvoiceover/gotchu%20slide%208.mp3">
+                        
+            </audio>
+            
+        <!-- audio 9 -->
+            <audio id="investgotchuslide9" controls preload>
+                <source type="audio/mp3" src="../gotchuvoiceover/gotchu%20slide%209.mp3">
+                        
+            </audio>
+            
+        <!-- audio 10 --> 
+            <audio id="investgotchuslide10" controls preload>
+                <source type="audio/mp3" src="../gotchuvoiceover/gotchu%20slide%2010.mp3">
+                        
+            </audio>
+            
+            
+        
+        
+        </div>
 
 
          <div class="footer">
@@ -392,6 +487,124 @@ We understand that this could increase our liability, and we will be evaluating 
               slides[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " active";
             }
+    </script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#investslide0").show();
+            
+            //hiding the rest of the slides
+            $("#investslide1").hide();
+            $("#investslide2").hide();
+            $("#investslide3").hide();
+            $("#investslide4").hide();
+            $("#investslide5").hide();
+            $("#investslide6").hide();
+            $("#investslide7").hide();
+            $("#investslide8").hide();
+            $("#investslide9").hide();
+            $("#investslide10").hide();
+            
+            
+        });
+        
+    </script>
+    <script>
+        //Automation of slides script
+        document.querySelector("#investplaybuttonpitch").addEventListener("click", function(){
+            document.querySelector("#investgotchuslide1").currentTime = 0;
+            document.querySelector("#investgotchuslide1").play();
+            $("#investslide0").fadeIn();
+            
+            document.querySelector("#investgotchuslide1").onended = function(){
+                $("#investslide0").fadeOut();
+                $("#investslide1").fadeIn();
+                
+                document.querySelector("#investgotchuslide2").play();
+                
+                document.querySelector("#investgotchuslide2").onended = function(){
+                    $("#investslide1").fadeOut();
+                    $("#investslide2").fadeIn();
+                    
+                    document.querySelector("#investgotchuslide3").play();
+                    
+                    document.querySelector("#investgotchuslide3").onended = function(){
+                         $("#investslide2").fadeOut();
+                         $("#investslide3").fadeIn();
+                        
+                         document.querySelector("#investgotchuslide4").play();
+                        
+                         document.querySelector("#investgotchuslide4").onended = function(){
+                             $("#investslide3").fadeOut();
+                             $("#investslide4").fadeIn();
+                             
+                             document.querySelector("#investgotchuslide5").play();
+                             
+                             document.querySelector("#investgotchuslide5").onended = function(){
+                                 $("#investslide4").fadeOut();
+                                 $("#investslide5").fadeIn();
+                             
+                                 document.querySelector("#investgotchuslide6").play();
+                                 
+                                 document.querySelector("#investgotchuslide6").onended = function(){
+                                     $("#investslide5").fadeOut();
+                                     $("#investslide6").fadeIn();
+                                     
+                                     document.querySelector("#investgotchuslide7").play();
+                                     
+                                     document.querySelector("#investgotchuslide7").onended = function(){
+                                         $("#investslide6").fadeOut();
+                                         $("#investslide7").fadeIn();
+                                         
+                                         document.querySelector("#investgotchuslide8").play();
+                                         
+                                         document.querySelector("#investgotchuslide8").onended = function(){
+                                             $("#investslide7").fadeOut();
+                                             $("#investslide8").fadeIn();
+                                             
+                                             document.querySelector("#investgotchuslide9").play();
+                                             
+                                             document.querySelector("#investgotchuslide9").onended = function(){
+                                                 $("#investslide8").fadeOut();
+                                                 $("#investslide9").fadeIn();
+                                                 
+                                                 document.querySelector("#investgotchuslide10").play();
+                                                
+                                                 document.querySelector("#investgotchuslide10").onended = function(){
+                                                     $("#investslide9").fadeOut();
+                                                     $("#investslide10").fadeIn();
+                                                     
+                                                     
+                                                 }
+                                                 
+                                                 
+                                             }
+                                         }
+                                     
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            
+               
+                
+            
+        })
+        
+        
+        
+        
+        
+        
+//        //Pausing the audio
+//        document.querySelector("#investslide0").addEventListener("click", function(){
+//            document.querySelector("#investgotchuslide1").pause();
+//        })
+        
+        
     </script>
     </body>
 </html>
