@@ -953,6 +953,76 @@ body {
     margin-top: 80px;
 }
 
+/* included the Behind the Scenes in the About us page */
+
+   
+.behind{
+    font-size: 50px;
+    color: #ED7358;
+    width: 92%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 800px;
+    text-align: center;
+}
+        
+.oneliner{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 200px;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+#container {
+    width: 500px;
+    text-align: center;
+    display: inline;
+    margin: auto;
+
+}
+
+#startingphoto {
+    margin-right: 5px;
+    border-radius: 20px;
+    background-color: #ED7358;
+    text-align: center;
+    margin: auto;
+    width: 800px;
+    margin: 10px;
+}
+
+#caption{
+    font-size:16pt;
+    padding:10px;
+    text-align: center;
+    width: 1000px;
+}
+
+.thumb{
+    margin:5px;
+    border-radius:5px;
+    transition:.2s;
+    width:120px;
+}
+
+#Content{
+    margin:auto;
+    
+    text-align: center;
+}
+
+#thumbnails {
+    display: inline;
+    margin:10px;
+    width: 120px;
+    text-align:center;
+    border-radius: 20px;
+}
+/* End of Behind the scenes code */
+
 /* end of About us style */
 
 
@@ -961,3 +1031,4 @@ body {
 
 
 /* End of Investor - Ant */
+
