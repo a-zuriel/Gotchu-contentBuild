@@ -891,3 +891,12 @@ body {
 }
 
 /* end of About us style */
+
+
+/* Investor styles - Ant */
+
+.mySlides fade img{
+    width:  100%;
+}
+
+/* End of Investor - Ant */
