@@ -1,0 +1,221 @@
+<html lang="en">
+
+<head>
+
+<title>Gotchu Behind the Scenes</title>
+    
+<script src="http://code.jquery.com/jquery.js"> </script>
+
+<script>
+        $(document).ready(function(){
+            
+            
+            $(".thumb").css("opacity",".5")
+            
+            //Sets the thumbnail that is currently moused over to full opacity
+            $(".thumb").on("mouseover",function(){
+                $(this).css("opacity","1");
+               
+            });
+            
+            // Opactiy 
+            $(".thumb").on("mouseout",function(){
+                $(this).css("opacity","0.5");
+                
+            });
+            
+            // Click Function
+            $(".thumb").click(function(){
+                $("startingphoto").hide();
+                $("caption").hide();
+                cap=$(this).attr("caption");
+                temp=$(this).attr("src");
+                
+                
+                //Fade in Starting image
+                $("#startingphoto").hide().attr("src",temp).fadeIn(500);
+                
+                $(".thumb").css("border","0px")
+                $(this).css("border","2px black solid")
+                
+                //Fade in Caption
+                $("#caption").hide().html(cap).fadeIn(700);
+             
+            });
+            
+        });
+
+
+</script>
+
+
+<style>
+    
+    .behind{
+        font-size: 50px;
+        font-weight: bolder;
+        color: #ED7358;
+        width: 92%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 80px;
+    }
+            
+    .oneliner{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 200px;
+        width: 800px;
+        margin: auto;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    #container {
+        width: 75%;
+        text-align: center;
+        display: inline;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    #startingphoto {
+	    
+        padding:5px;
+        border-radius: 20px;
+        background-color: #ED7358;
+	    text-align: center;
+        margin: auto;
+        
+        margin: 10px;
+    }
+
+    #caption{
+        font-size:16pt;
+        padding:10px;
+        text-align: center;
+        width: 1000px;
+    }
+
+    .thumb{
+        margin:5px;
+        border-radius:5px;
+        transition:.2s;
+        width:120px;
+    }
+    
+    #Content{
+        margin:auto;
+        float: left; 
+        text-align: center;
+    }
+
+    #thumbnails {
+        display: inline;
+        margin:10px;
+        width: 120px;
+        text-align:center;
+    
+        border-radius: 20px;
+    }
+
+
+@media screen and (max-width: 1000px){
+
+    #thumbnails{
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+    
+    #startingphoto{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+    }
+
+    
+}
+    
+</style>
+    
+</head>
+
+<body>
+
+    <div class="behind">
+    
+        Behind the Scenes
+        <hr>
+    
+    </div><!-- Close Header -->
+    
+    <div class = "oneliner">
+            Our journey from November through April has taught us a lot. Here is a sneak peak behind the scenes of our process of developing our platform. While working hard, we always find time to have fun! 
+    </div>
+    
+    
+    
+<div id="container">
+    
+    <hr>
+<div id="Content">
+      
+        <img src="team.jpg" id="startingphoto">
+            
+        <br>
+        
+        <div id="caption">
+            
+            The team together having a great time. It is important to us to find time for fun while working. We are all great friends with eachother.
+            
+        </div><!--Caption-->
+        
+    </div><!--Content-->    
+    
+   
+<!-- Thumbnails --> 
+
+    <div id="thumbnails">
+        
+        
+        <img 
+        	src="1.jpeg" 
+        	class="thumb" 
+        	caption="Our initial statement.">
+        
+        <img src="2.jpg" 
+        	 class="thumb" 
+        	 caption="One of our first breakdowns of what we wanted to do thorugh Gotchu.">
+        
+        <img src="3.jpg" 
+        	 class="thumb" 
+        	 caption="How we initially broke down the freelancing problem.">
+        
+         <img src="4.jpg" 
+        	 class="thumb" 
+        	 caption="Breakdown of our tree connecting free lancers to those hiring.">
+        
+        <img src="myaricha.jpg" 
+        	 class="thumb" 
+        	 caption="Mya and Richa having fun while working.">
+        
+        <img 	
+        	src="team.jpg" 
+        	class="thumb" 
+        	caption="The team together having a great time. We always maintain good energy while working.">
+    
+    </div>
+
+
+<!-- thumbnails --> 
+    
+    
+</div><!--Container-->
+
+</body>
+    
+</html>
