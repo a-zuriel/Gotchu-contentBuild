@@ -921,15 +921,22 @@ body {
     }
     .testnavbar {
         list-style-type: none;
-        list-style: none;
-        background-color: #ED7358;
-        margin: 0px;
-        overflow: hidden;
-        top: 0px;
-        position: fixed;
-        width: 100%;
-        border-bottom: solid 1px white;
+    list-style: none;
+    background-color: white;
+    margin: 0px;
+    overflow: hidden;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 1px white;
         z-index: 10;
+    }
+    .testtop {
+    font-size: 25px;
+    color: #ED7358;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     }
 /* end Testimonials style*/
 
