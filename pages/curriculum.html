@@ -221,10 +221,14 @@
                                     
                                     <div id="curichelpintro">Have any questions? We Gotchu! Feel free to ask our chatbot!</div>
                                     
-                                    <div id="curicpinkchatbot"></div>
+                                    <div id="curicpinkchatbot">
+                                        <div id="curicpiunkchatboxLEFT"></div>
+                                        <div id="curicpiunkchatboxRIGHT"></div>
+                                    
+                                    </div>
                                     
                                     <div id="curicpinkhelptextbox">
-                                        <input type=text id="curicpinkhelpaskbox" style="width:250px; height:30px;">
+                                        <input type=text id="curicpinkhelpchatbotaskbutton" style="width:250px; height:30px;">
                                         
                                         <div class="curicbeginbutton" id="curicpinkhelpaskbutton">Ask</div>
                                     </div>
@@ -539,6 +543,7 @@ But if we were instead. To be more mindful about our spending if we were to keep
 
     </body>
     <script src="http://code.jquery.com/jquery.js"></script>
+    
     <script>
         var correctAns = function(obj1){
             
@@ -881,8 +886,17 @@ But if we were instead. To be more mindful about our spending if we were to keep
             })
             
         })
+        
          
 
+    </script>
+<!--    this is for the chat bot-->
+    <script src="../Scripts/chatboxscript.js">
+    
+    </script>
+    <!-- this is for the array data -->
+    <script src="../Scripts/chatbotarraydata.js">
+       
     </script>
     <script>
         var boxplzMove = function(obj1, obj2, obj3){
