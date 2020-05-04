@@ -1,5 +1,12 @@
 body{
-	background-color: white;
+	
 	margin: 0px;
     overflow: hidden;
+}
+
+#sketch {
+	display: block;
+	margin: auto;
+	background-color: red;
+	border-radius: 100px;
 }

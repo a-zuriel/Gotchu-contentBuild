@@ -8,10 +8,13 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(600, 300);
-    background(51);
+    let canv =   createCanvas(600, 200);
+    canv.position(windowWidth/2, 200, 'static');
+    canv.center();
 
-    var points = font.textToPoints('gotchu', 75, 150, 120, {
+    canv.background('rgba(0,255,0, 0)');
+
+    var points = font.textToPoints('gotchu', 75, 125, 120, {
         sampleFactor: 0.2
     });
 
