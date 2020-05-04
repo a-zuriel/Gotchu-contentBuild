@@ -10,15 +10,7 @@
         
         
         <style>            
-            .oneliner{
-                font-size: 30px;
-                font-weight: bold;
-                margin-top: 200px;
-                width: 800px;
-                margin: auto;
-                text-align: center;
-                line-height: 50px;
-            }
+
             
             .everybody{
                 width: 100%;
@@ -94,8 +86,7 @@
                 width: 92%;
                 margin: auto;
                 margin-bottom: 30px;
-                margin-top: 80px;  
-                text-align: center;
+                
                          
             }
             
@@ -106,13 +97,14 @@
 
     <body>
                 <nav class="navbar">
+            <li class="navitem"><a href="./webdevteam.html">Stick Designs</a></li>
             <li class="titleitem"><a href="../index.html">Gotchu</a></li>
             <li class="navitem"><a href="./AboutUs.html">About Us</a></li>
             <li class="navitem"><a href="./curriculum.html">Curriculum</a></li>
             <li class="navitem"><a href="./investors.html">Investors</a></li>
             <li class="navitem"><a href="./BusinessPlan.html">Business Plan</a></li>
             <li class="navitem"><a href="./testimonial.html">Testimonials</a></li>
-            
+
 
         </nav>
         
@@ -120,7 +112,8 @@
             Meet the Team
             <hr>
         </div>
-        
+       
+         <div id= "darkmode">Switch view mode</div>
         
 <div class = "everybody">
         <div class = "oneliner">
@@ -134,7 +127,7 @@
             </div>
             
             <h1 class="name">Anupam</h1>
-            <h2>Architect</h2>
+            <h2>Product Manager</h2>
             <p>Anupam is from Los Angeles, California. He has been fascinated by product design he's enitire life. In particular, he loves Apple products and hope to work at the company one day.</p>
              
         </div>
@@ -160,7 +153,7 @@
             </div>
             
             <h1 class="name">Mya</h1>
-            <h2>Scrum Master</h2>
+            <h2>Lead Design</h2>
             <p>Mya is from Los Angeles, California, and has always been fascinated by the music and culture of the area. Throughout the day you can catch him listening to music, dancing and making art.</p>
              
         </div>
@@ -186,7 +179,7 @@
             </div>
             
             <h1 class="name">Gitika</h1>
-            <h2>Graphic Designer</h2>
+            <h2>Community Outreach</h2>
             <p>Gitika is from San Jose, California. She loves entrepreneruship and loves getting to meet with and learn about successful companies. She also is very invovled in her community</p>
              
         </div>
@@ -206,10 +199,10 @@
     
     </div>
     
-
+    <p id="spacer">a</p>
         
     <div class="ourStory">
-            <h1>Our Story</h1>
+            Our Story
             <hr>
         </div>
         
@@ -222,12 +215,10 @@
         </div>
 
 
-<div class="behind">
-    
-    Behind the Scenes
-    <hr>
-
-</div><!-- Close Header -->
+        <div class = "meet">
+            Behind the Scenes
+            <hr>
+        </div>
 
 <div class = "oneliner">
         Our journey from November through April has taught us a lot. Here is a sneak peak behind the scenes of our process of developing our platform. While working hard, we always find time to have fun! 
@@ -249,17 +240,17 @@
 <div id="thumbnails">
     
     
-    <img src="1.jpeg" class="thumb" caption="Our initial statement.">
+    <img src="./Gotchubts/1.jpeg" class="thumb" caption="Our initial statement.">
     
-    <img src="2.jpg" class="thumb" caption="One of our first breakdowns of what we wanted to do thorugh Gotchu.">
+    <img src="./Gotchubts/2.jpg" class="thumb" caption="One of our first breakdowns of what we wanted to do thorugh Gotchu.">
     
-    <img src="3.jpg" class="thumb" caption="How we initially broke down the freelancing problem.">
+    <img src="./Gotchubts/3.jpg" class="thumb" caption="How we initially broke down the freelancing problem.">
     
-     <img src="4.jpg" class="thumb" caption="Breakdown of our tree connecting free lancers to those hiring.">
+     <img src="./Gotchubts/4.jpg" class="thumb" caption="Breakdown of our tree connecting free lancers to those hiring.">
     
-    <img src="myaricha.jpg" class="thumb" caption="Mya and Richa having fun while working.">
+    <img src="./Gotchubts/myaricha.jpg" class="thumb" caption="Mya and Richa having fun while working.">
     
-    <img src="team.jpg" class="thumb" caption="The team together having a great time. We always maintain good energy while working.">
+    <img src="./Gotchubts/team.jpg" class="thumb" caption="The team together having a great time. We always maintain good energy while working.">
 
 </div>
 
@@ -268,6 +259,9 @@
 
 
 </div><!--Container-->
+<script src="http://code.jquery.com/jquery.js"> </script>
+<script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
+                                           
 
 <script>
 $(document).ready(function(){
@@ -308,6 +302,11 @@ $(document).ready(function(){
     
 });
 
+ //dark mode
+ var Nightly = new Nightly();
+    document.getElementById("darkmode").addEventListener("click", function (){
+        Nightly.toggle();
+    });
 
 </script>
                                

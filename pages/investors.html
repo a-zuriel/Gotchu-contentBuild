@@ -218,7 +218,7 @@ body {
             height: 10px;
             width: 10px;
             border-radius: 5px;
-            background-color: black;
+            background-color: #ED7358;
             cursor: pointer;
             margin: 0 2px;
             display: inline-block;
@@ -262,20 +262,27 @@ body {
 
     <body>
         <nav class="navbar">
+            <li class="navitem"><a href="./webdevteam.html">Stick Designs</a></li>
             <li class="titleitem"><a href="../index.html">Gotchu</a></li>
             <li class="navitem"><a href="./AboutUs.html">About Us</a></li>
             <li class="navitem"><a href="./curriculum.html">Curriculum</a></li>
             <li class="navitem"><a href="./investors.html">Investors</a></li>
             <li class="navitem"><a href="./BusinessPlan.html">Business Plan</a></li>
             <li class="navitem"><a href="./testimonial.html">Testimonials</a></li>
+
         </nav>
+        <div id= "darkmode">Switch view mode</div>
+        
         <div class="homecontent">
 
         <div id="outercontainer">  
-            <h1>Investors</h1>
+            <div class = "meet">
+                Investors
+                <hr>
+            </div>
             
           </div>
-            <hr>
+            
          <div id="presentation">
             
             <div class="slide-container">
@@ -459,7 +466,8 @@ We understand that this could increase our liability, and we will be evaluating 
                     <p>azramire@usc.edu</p></div>
         </div>
 
-                   
+         <script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
+           
         <script>
             var slideIndex = 1;
             showSlides(slideIndex);
@@ -604,7 +612,10 @@ We understand that this could increase our liability, and we will be evaluating 
 //            document.querySelector("#investgotchuslide1").pause();
 //        })
         
-        
+     var Nightly = new Nightly();
+    document.getElementById("darkmode").addEventListener("click", function (){
+        Nightly.toggle();
+    });    
     </script>
     </body>
 </html>

@@ -24,6 +24,8 @@ body {
 
 .footer div {
     padding: 10px;
+    display: block;
+    margin: auto;
 }
 .footer div p {
     display: inline;
@@ -41,6 +43,20 @@ body {
     font-size: 30pt;
     font-weight: bold;
 }
+
+#darkmode {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    }
+#darkmode:hover {
+    background-color: rgba(0,0,0,0.3);
+    }
 
 /* this css styling is for all navbar stylings */
 
@@ -1295,16 +1311,7 @@ body {
 /* included the Behind the Scenes in the About us page */
 
    
-.behind{
-    font-size: 50px;
-    color: #ED7358;
-    width: 92%;
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 800px;
-    text-align: center;
-}
-        
+     
 .oneliner{
     font-size: 30px;
     font-weight: bold;
@@ -1363,6 +1370,10 @@ body {
 /* End of Behind the scenes code */
 
 /* end of About us style */
+
+#spacer {
+    opacity: 0%;
+}
 
 
 /* Investor styles - Ant */

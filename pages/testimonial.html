@@ -5,12 +5,13 @@
         <title>Gotchu</title>
         <link rel="stylesheet" type="text/css" href="../index.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="t-scroll.min.css">
+        <link type="text/css" rel="stylesheet" href="../plugins/t-scroll.min.css">
     </head>
 
 
     <body>
         <nav class="navbar">
+            <li class="navitem"><a href="./webdevteam.html">Stick Designs</a></li>
             <li class="titleitem"><a href="../index.html">Gotchu</a></li>
             <li class="navitem"><a href="./AboutUs.html">About Us</a></li>
             <li class="navitem"><a href="./curriculum.html">Curriculum</a></li>
@@ -25,6 +26,8 @@
                 Testimonials
                 <hr>
             </div>
+            <div id= "darkmode">Switch view mode</div>
+
             <div class="testcontainer fadeUp">
                 <div class="testname">Sarah M.</div>
                 <img src="../testimages/sarah.png" class="testpic">
@@ -68,10 +71,15 @@
 
     </body>
 
-    <script type="text/javascript" src="t-scroll.min.js"></script>
+    <script type="text/javascript" src="../plugins/t-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
     <script type="text/javascript">
     Tu.tScroll({
       't-element': '.fadeUp'
     })
+     var Nightly = new Nightly();
+    document.getElementById("darkmode").addEventListener("click", function (){
+        Nightly.toggle();
+    });
 </script>
 </html>
