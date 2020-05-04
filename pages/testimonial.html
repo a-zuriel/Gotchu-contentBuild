@@ -26,6 +26,8 @@
                 Testimonials
                 <hr>
             </div>
+            <div id= "darkmode">Switch view mode</div>
+
             <div class="testcontainer fadeUp">
                 <div class="testname">Sarah M.</div>
                 <img src="../testimages/sarah.png" class="testpic">
@@ -70,9 +72,14 @@
     </body>
 
     <script type="text/javascript" src="../plugins/t-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
     <script type="text/javascript">
     Tu.tScroll({
       't-element': '.fadeUp'
     })
+     var Nightly = new Nightly();
+    document.getElementById("darkmode").addEventListener("click", function (){
+        Nightly.toggle();
+    });
 </script>
 </html>
