@@ -44,6 +44,20 @@ body {
     font-weight: bold;
 }
 
+#darkmode {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    }
+#darkmode:hover {
+    background-color: rgba(0,0,0,0.3);
+    }
+
 /* this css styling is for all navbar stylings */
 
 .navbar {
