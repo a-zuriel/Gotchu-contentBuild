@@ -6,6 +6,7 @@
                 <title>Gotchu</title>
         <link rel="stylesheet" type="text/css" href="../index.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         
         
         
@@ -112,7 +113,8 @@
             Meet the Team
             <hr>
         </div>
-        
+       
+         <div id= "darkmode">Switch view mode</div>
         
 <div class = "everybody">
         <div class = "oneliner">
@@ -299,6 +301,11 @@ $(document).ready(function(){
     
 });
 
+ //dark mode
+ var Nightly = new Nightly();
+    document.getElementById("darkmode").addEventListener("click", function (){
+        Nightly.toggle();
+    });
 
 </script>
                                
