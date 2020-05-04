@@ -122,8 +122,9 @@
             Web Dev Team
             <hr>
         </div>
-        
-        
+         
+        <div id= "darkmode">Switch view mode</div>
+  
         <div class = "everybody">
             <div class = "oneliner">
                 We are a group of students from the Iovine and Young Academy who are happy to design your company's website! 
@@ -241,5 +242,11 @@
         </div>
         
     </body>
-
+     <script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
+     <script>
+     var Nightly = new Nightly();
+    document.getElementById("darkmode").addEventListener("click", function (){
+        Nightly.toggle();
+    });
+     </script>
 </html>

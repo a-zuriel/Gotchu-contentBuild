@@ -43,7 +43,7 @@ botAnswer.push('Annual tax return. If you’re self-employed or freelance throug
 botQuestion.push('Where can I freelance')
 botAnswer.push('As mentioned, an advantage of freelancing is that it allows you to travel. Depending on your skills and the service you offer, you may work on freelance jobs locally, nationally or internationally. For example, you might offer a gardening service, which would be more likely offered to local individuals and businesses. Or you might freelance as a personal trainer and offer services locally and regionally.')
 
-botQuestion.push('How to get started')
+botQuestion.push('How do you get started')
 botAnswer.push('Place your CV on a suitable site. Some of the more popular job boards and CV aggregators include tiptopjob, jobserve, friendsreunitedjobs, totaljobs, CV-Library and jobsite. However, these sites do not specialise in micro outsourced jobs and their focus is more on capturing your CV rather than the services that you offer.')
 
 botQuestion.push('Can I make a career out of freelancing')
@@ -134,7 +134,7 @@ botQuestion.push('Which job should I go after initially')
 botAnswer.push('It really depends on your skill set. There is no specific answer to this question. Go after what you can do best')
 
 botQuestion.push('What is an interview')
-botAnswer.push('nterview may consist of exchange of emails, chat or voice/video call. Voice calls normally takes place on skype or similar platforms.')
+botAnswer.push('An interview may consist of exchange of emails, chat or voice/video call. Voice calls normally takes place on skype or similar platforms.')
 
 botQuestion.push('What Legal Paperwork Do I Need')
 botAnswer.push('As a freelancer, your first line of defense against any sort of potential dispute with a client is a solid contractor agreement')
