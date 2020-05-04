@@ -28,6 +28,9 @@
             <li class="navitem"><a href="./testimonial.html">Testimonials</a></li>
 
         </nav>
+        
+        <div id= "darkmode">Switch view mode</div>
+        
         <div class="homecontent">
             
 
@@ -899,6 +902,9 @@ But if we were instead. To be more mindful about our spending if we were to keep
     <script src="../Scripts/chatbotarraydata.js">
        
     </script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
+    
     <script>
         var boxplzMove = function(obj1, obj2, obj3){
             $(obj1).animate({
@@ -917,6 +923,9 @@ But if we were instead. To be more mindful about our spending if we were to keep
             })
         }
     
-    
+     var Nightly = new Nightly();
+    document.getElementById("darkmode").addEventListener("click", function (){
+        Nightly.toggle();
+    });
     </script>
 </html>
