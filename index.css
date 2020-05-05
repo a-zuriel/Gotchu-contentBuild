@@ -54,6 +54,7 @@ body {
     position: fixed;
     top: 100px;
     right: 30px;
+    z-index: 3;
     }
 #darkmode:hover {
     background-color: rgba(0,0,0,0.3);
@@ -1120,7 +1121,7 @@ body {
     }
     .curicvidboxes{
         width: 500px;
-        height:2000px;
+        height:1600px;
 
     }
     .curicpinkbox{
@@ -1686,7 +1687,7 @@ body {
     
     /* Full-width containers */
     .container {
-    width: 100%;
+    width: 90%;
     padding-left: 70px;
     padding-right: 25px;
     }

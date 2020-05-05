@@ -12,7 +12,7 @@
 
     <style>
         .BusinessContent {
-            width: 80%;
+           
             margin: auto;
 
         }
@@ -87,22 +87,39 @@
                 </div>
                 <div class="container right">
                   <div class="content">
-                    <h2>2012</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                  </div>
+                    <h2>Funding Requests</h2>
+                    <p>In terms of our funding requirements, it is our goal to raise $25,0000-$50,000 within the next year, $100,000 the following year, and scaling upwards based on need and sales from then on out. The funds would go towards not only building and maintaining the Gotchu platform, but also be employed for marketing, partnerships with corporate brands, and the employment of software development professionals to enhance the product’s ability to help new freelancers achieve their goals (incorporate AI, machine learning, etc... ). 
+                    </p>
+                        <canvas id="myChart"></canvas>
+                </div>
                 </div>
                 <div class="container left">
                   <div class="content">
-                    <h2>2011</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                  </div>
+                    <h2>Legal Structure</h2>
+                    <p>We intend to structure Gotchu as a C-Corporation in order to pursue external funding from venture capital firms and shield individuals within the company from liability. We are aware that this will entail registering the business name and filing a certificate of incorporation, and that such procedures will require a fee. We are also prepared to draft corporate bylaws and hold a board of directors meeting.</p>
+                </div>
                 </div>
                 <div class="container right">
                   <div class="content">
-                    <h2>2007</h2>
-                    <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                  </div>
+                    <h2>Robustness</h2>
+                    <p>For an investor, we want to reassure you that we as a company have a relatively low risk associated, but also a very high reward potential. Looking at the revenue forecast for our best case scenario, we believe that Gotchu has the potential to boom - and its growth rate will only increase. Every time the Gotchu platform grows in size, so too does our network, meaning, the more freelancers and clients available on our platform, the higher the potential to attract new ones. We believe that with with every freelancer we add, our platform has the potential for exponential growth, and has high potential for optimal scalability. Our maximum likelihood case exhibits this as well - with a thoughtful infusion of cash, we believe that we could even bring this curve to match the great success of our maximum likelihood case and rapidly increase in size. </p>
+
+                    <p>As for the worst case, we believe that we have a decent sized runway currently in place in which we can maintain a similar structure and pricing for our company if the worst were to unfortunately occur. With careful planning and cost cutting at our minimum acceptable cash point, we believe that we can extend this runway out even further and quickly turn our misfortune into rapid profit with the additional time that we have.</p>                  </div>
                 </div>
+                <div class="container right">
+                    <div class="content">
+                      <h2>Market Reasearch</h2>
+                      <p>Studies such as Freelancing in America 2018 revealed that there are 56.7 million Americans doing freelance work today and 64% of them are finding opportunities online. This is compared to  53 million and 42% in 2014, respectively. </p>
+
+                      <p>Online platforms such as Fiverr report having 830,000 freelancers and 5.5 million clients to facilitate an average of 50 million monthly transactions. </p>
+      
+                      <p>The freelance industry is difficult to quantify overall because it is influenced by both measurable segments such as online freelancing platforms and non-measurable segments such as word-of-mouth and social media postings, many freelancers and clients use more than one of these avenues for exposure, and since it inherently lacks structure and hierarchy. Furthermore, the segment of the market Gotchu seeks to capture is largely untapped since we focus on introducing people would not otherwise participate in freelancing to the line of work to—specifically U.S.-based college students. </p>
+      
+                      <p>Gotchus scope is its greatest value proposition to its customers. Restricting the freelancers to U.S.-based college students offers the freelancers opportunities to be compensated and find work without competing against professionals, while clients enjoy favorable prices. Furthermore, U.S. freelancers who would usually opt for word-of-mouth over global platforms that create competition against those in parts of the world where the cost of living is much lower, are now able to enjoy the benefits of online correspondence and exposure without such drawbacks.</p> 
+      
+                      <p>The freelance industry is currently not heavily regulated, but local and state governments have begun introducing legislation intended to fairly define and compensate freelance work. California’s AB5, for example, makes it more difficult for companies to classify their workers as independent contractors instead of full-time employees. While this affects the freelance process itself, our decision to focus on connection-building and task management as opposed to payment facilitation shields the company from regulatory measures and legal obligations.</p>
+                   </div>
+                  </div>
               </div>
 
 
@@ -241,6 +258,55 @@
             
 
         </div>
+
+                            
+        <script>
+            let myChart = document.getElementById('myChart').getContext('2d');
+
+            Chart.defaults.global.defaultFontSize = 18;
+            Chart.defaults.global.defaultFontColor = '#777';
+
+            let gotchuFinancial = new Chart(myChart, {
+              type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+              data: {
+                datasets: [{
+                    label: 'Gross Profit',
+                    data: [12064, 7468, 7450, 4893, 4100],
+                    backgroundColor:['rgba(255,99,132,.8)']
+                }, {
+                    label: 'Operating Income',
+                    data: [11064, -7340, 6950, -12914, 3600],
+                    backgroundColor:['rgba(0,99,132,.8)']
+                },
+
+                    {
+                    label: 'Revenue',
+                    data: [112250, 12775, 7600, 5925, 4100],
+                    backgroundColor:['rgba(54,162,235,.6)']
+                }],
+                labels:['6 Months','18 Months', '36 Months', '48 Months', '60 Months'],
+                  borderWidth:1,
+                  borderColor:'#777',
+                  hoverBorderWidth:3,
+                  hoverBorderColor:'#000'
+
+            },
+                options:{
+                title:{
+                  display:true,
+                  text:'Gotchu Revenue and Profit Base Case',
+                  fontSize:25
+                },
+                legend:{
+                  display:true,
+                  position:'right',
+                  labels:{
+                    fontColor:'#000'
+                  }
+                }     
+              }
+            });
+          </script>
 
     </body>
     
