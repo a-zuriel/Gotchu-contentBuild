@@ -139,7 +139,7 @@ body {
 
 
 .solution{
-    padding-left: 40%;
+    padding-left: 45%;
     background-color: #333333;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -218,7 +218,7 @@ body {
     color: #ED7358;
 }
 
-@media screen and (max-width: 920px){
+@media screen and (max-width: 1050px){
 
     .navitem{
         width: 90%;
