@@ -1493,6 +1493,15 @@ body {
 #spacer {
     opacity: 0%;
 }
+.everybody #spacer {
+    padding-bottom: 600px;
+}
+
+@media screen and (max-width:920px){
+    .everybody #spacer {
+        padding-bottom: 0;
+    }
+}
 
 
 /* Index/home file animation */
