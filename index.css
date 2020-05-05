@@ -1,8 +1,8 @@
 html {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
-    background-image: url(curicimages/gotchubackgroundgradient.png);
-    background-size: cover; 
+    background-image: url(../Gotchu-contentBuild/curicimages/gotchubackgroundgradient.png);
+    background-size: cover;
 }
 body {
     margin: 0px;
@@ -29,7 +29,7 @@ body {
 }
 .footer div p {
     display: inline;
-   
+
 }
 
 .footer span{
@@ -43,6 +43,20 @@ body {
     font-size: 30pt;
     font-weight: bold;
 }
+
+#darkmode {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    }
+#darkmode:hover {
+    background-color: rgba(0,0,0,0.3);
+    }
 
 /* this css styling is for all navbar stylings */
 
@@ -87,18 +101,14 @@ body {
 }
 
 .homecontent{
-    margin-top: 350px;
+    margin-top: 60px;
     color: #ED7358;
 }
 .homecontenth2{
     margin-left: 100px;
     margin-right: 100px;
     font-size: 25pt;
-   color: #ED7358;
-    
-    padding: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    color: #ED7358;
 }
 
 .titleitem {
@@ -121,7 +131,7 @@ body {
     }
 
     .navitem a{
-        color: white;
+        color: black;
     }
 
 }
@@ -139,18 +149,6 @@ body {
     color: #ED7358;
 }
 
-.holder-sketch{
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-
-.my-gallery{
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-
 /* About Us Styles */
 
 .AboutUsContent {
@@ -161,8 +159,8 @@ body {
 
 /*Curriculm style*/
 .curicbackground{
-    background-image: url(curicimages/gotchubackgroundgradient.png);
-    background-size: cover; 
+    background-image: url("/curicimages/gotchubackgroundgradient.png");
+    background-size: cover;
 }
 .curicheader{
     text-align: center;
@@ -172,7 +170,7 @@ body {
 }
 .curicsecondheader{
     text-align:center;
-    
+
     font-size:18pt;
     padding-bottom:30pt;
     margin-left:100px;
@@ -200,7 +198,7 @@ body {
     width:1355px;
     margin-left:auto;
     margin-right:auto;
-    
+
     height:500px;
 }
 .curicplaceholderb{
@@ -234,14 +232,14 @@ body {
     top:200px;
     position: absolute;
     left:15px;
-    
+
     width:390px;
 }
 .curicminitext{
     padding-right:70px;
     color:black;
-    
-    
+
+
 }
 
 .curicbeginbutton{
@@ -302,23 +300,23 @@ body {
    padding-right:20px;
 }
 .curicallpinkbox1{
-   
+
     width:430px;
     height:504px;
     position: absolute;
     top:0px;
 }
 .curicallgraybox2{
-    
+
     width:410px;
     height:504px;
     position: absolute;
     left:480px;
     top:0px;
-    
+
 }
 .curicallorangebox3{
-    
+
     width:410px;
     height:504px;
     position:absolute;
@@ -328,7 +326,7 @@ body {
 #freelancetutorial{
     position:absolute;
     left:0px;
-    
+
 }
 #curicpinkbackground{
     width:900px;
@@ -349,16 +347,16 @@ body {
 }
 .curicpinkparent{
     position:relative;
-    
+
 }
 .curicminititlebig1{
-    
+
     font-size:30pt;
-    
+
 }
 .curictextboxbig1{
     position: absolute;
-   
+
     z-index:1;
     top:480px;
     width:600px;
@@ -408,18 +406,18 @@ body {
 .curicpinkboxquestion1{
     padding-top:10px;
     font-size:12pt;
-    
+
     padding-right:7px;
 }
 .curicpinkquestion1{
     font-size:10pt;
-    
+
     width:50px;
     padding-top:5px;
 }
 .curicpinkquestion2{
     font-size:10pt;
-    
+
     width:250px;
     padding-top:7px;
 }
@@ -439,7 +437,7 @@ body {
 .curichelptext{
     position:relative;
     z-index:1;
-    
+
 }
 #curicpinkboxtitle{
     position:absolute;
@@ -458,6 +456,9 @@ body {
 #curichelpintro{
     position:absolute;
     left:20px;
+
+    width:387px;
+    top:-15px;
 }
 #curicpinkchatbot{
     border: black 1px solid;
@@ -466,30 +467,69 @@ body {
     margin-left:20px;
     position: absolute;
     top:50px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     overflow-x: auto;
-    
+
 }
-#curicpiunkchatboxLEFT{
+
+.curicpiunkchatboxLEFT{
 /*    border: black 1px solid;*/
     width:190px;
-    height:2000px;
+    height:3000px;
     position: absolute;
     top:1px;
     left:2px;
-    overflow-x: hidden; 
-    
+    overflow-x: hidden;
+
 }
-#curicpiunkchatboxRIGHT{
+.curicpiunkchatboxRIGHT{
 /*    border: black 1px solid;*/
     width:190px;
-    height:2000px;
+    height:3000px;
     position: absolute;
     right:2px;
     top:1px;
-    overflow-x: hidden; 
-    
+    overflow-x: hidden;
+
 }
+.curicgraychatboxLEFT{
+/*    border: black 1px solid;*/
+    width:190px;
+    height:3000px;
+    position: absolute;
+    top:1px;
+    left:2px;
+    overflow-x: hidden;
+}
+.curicgraychatboxRIGHT{
+/*    border: black 1px solid;*/
+    width:190px;
+    height:3000px;
+    position: absolute;
+    right:2px;
+    top:1px;
+    overflow-x: hidden;
+}
+.curicorangechatboxLEFT{
+/*    border: black 1px solid;*/
+    width:190px;
+    height:3000px;
+    position: absolute;
+    top:1px;
+    left:2px;
+    overflow-x: hidden;
+}
+.curicorangechatboxRIGHT{
+/*    border: black 1px solid;*/
+    width:190px;
+    height:3000px;
+    position: absolute;
+    right:2px;
+    top:1px;
+    overflow-x: hidden;
+}
+
+
 
 #curicpinkhelpaskbox{
    position: absolute;
@@ -497,7 +537,7 @@ body {
     top:570px;
 }
 #curicpinkhelptextbox{
-    
+
 }
 #curicpinkhelpchatbotaskbutton{
     position: absolute;
@@ -536,9 +576,9 @@ body {
     position: absolute;
     left:20px;
     border:black solid 1px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     overflow-x: auto;
-    
+
 }
 
 /*GRAY BOX STUFF*/
@@ -570,7 +610,7 @@ body {
     top:175px;
 }
 .curicgrayquizbox{
-    
+
 }
 .curicgrayquizboxright{
     width:430px;
@@ -582,17 +622,17 @@ body {
 .curicgrayquizboxtext{
 /*    z-index:1;*/
     position: relative;
-    
-    
+
+
 }
 .curicgrayboxtext{
     position: absolute;
     top:-660px;
     right:320px;
-    
-    
+
+
     font-size:40px;
-    
+
 }
 .curicgrayquizintro{
     position: absolute;
@@ -605,7 +645,7 @@ body {
     right:20px;
     width:390px;
     height:550px;
-    
+
 }
 #curicgraysubmitbutton{
     position: absolute;
@@ -620,7 +660,7 @@ body {
 
 }
 .curicgrayhelpintro{
-    
+
     width:390px;
     position: absolute;
     right:20px;
@@ -633,20 +673,22 @@ body {
     height:500px;
     right:18px;
     top:-30px;
+    overflow-x: hidden;
+    overflow-x: auto;
 
 }
 #curicgrayhelptextbox{
-    
-    
-    
+
+
+
 }
 #curicpinkhelpaskbox{
     position: absolute;
     left:945px;
     top:485px;
-        
-    
-    
+
+
+
 }
 #curicgrayhelpaskbutton{
     position: absolute;
@@ -671,9 +713,9 @@ body {
     height:500px;
     right:18px;
     top:-30px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     overflow-x: auto;
-    
+
 }
 /*ORAGNE BOX STUFF ORANGE BOX STUFF*/
 #curicorangebackgroundfin{
@@ -691,7 +733,7 @@ body {
     z-index: 1;
     left:255px;
     top:-150px;
-    
+
 }
 .curictextboxbigorange1{
     position: absolute;
@@ -710,17 +752,17 @@ body {
 #curicquizbutpos1C{
    position: absolute;
    right:-90px;
-   top:85px; 
+   top:85px;
 }
 #curicquizbutpos2C{
    position: absolute;
    right:-90px;
-   top:130px; 
+   top:130px;
 }
 #curicquizbutpos3C{
    position: absolute;
    right:-90px;
-   top:175px; 
+   top:175px;
 }
 .curicorangequizboxright{
     width:430px;
@@ -740,7 +782,7 @@ body {
     right:0px;
     right:60px;
     top:-100px;
-    
+
 }
 .curicgrayorangequestions{
     position: absolute;
@@ -748,7 +790,7 @@ body {
     right:20px;
     width:390px;
     height:550px;
-    
+
 }
 #curicorangesubmitbutton{
     right:310px;
@@ -774,12 +816,14 @@ body {
     height:500px;
     right:18px;
     top:-30px;
+    overflow-x: hidden;
+    overflow-x: auto;
 }
 #curicorangehelpaskbox{
     right:154px;
     position: absolute;
     bottom:-20px;
-        
+
 }
 #curicorangehelpaskbutton{
     right:20px;
@@ -797,7 +841,7 @@ body {
     position: absolute;
     right:230px;
     top:-100px;
-    
+
 }
 .curicoragnescriptscrollbox{
     position: absolute;
@@ -806,7 +850,7 @@ body {
     height:500px;
     right:18px;
     top:-30px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     overflow-x: auto;
 
 }
@@ -817,8 +861,8 @@ body {
     border-radius:10px;
     padding-left:5px;
     padding-right:5px;
-    
-    
+
+
 }
 .curicpinkCHATTEXTLEFT{
     border:1px solid black;
@@ -827,8 +871,18 @@ body {
     border-radius:10px;
     padding-left:5px;
     padding-right:5px;
-    
-    
+
+
+}
+.curicpinkCHATTEXTLEFTSELECTED{
+    border:1px solid green;
+    background-color:green;
+    color:white;
+    border-radius:10px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-bottom:3px;
+
 }
 .curicpinkCHATTEXTHIDE{
     border:1px solid white;
@@ -837,15 +891,114 @@ body {
     padding-left:5px;
     padding-right:5px;
     }
+.curiccookiebutton{
+    position: absolute;
+    z-index: 1;
+    top:0px;
+    right:0px;
+    visibility: hidden;
+}
+.curiccookiebutton1{
+    position: absolute;
+    z-index: 1;
+    top:50px;
+    right:0px;
+    visibility: hidden;
+}
+.curiccookiebutton2{
+   position: absolute;
+    z-index: 1;
+    top:100px;
+    right:0px;
+    visibility: hidden;
+}
+/*SAVED CHAT BUTTON SCRIPTS */
+
+#curicALLsavedchatbutton{
+    color:#ED7358;
+    font-size:18pt;
+    text-align:center;
+    margin-top:70px;
+    padding-top:3px;
+    padding-bottom:3px;
+    border:#ED7358 2px solid;
+    width:15%;
+    border-radius: 20px;
+    margin-left:42%;
+}
+#curicALLsavedchatbutton:hover{
+    background-color:#ED7358;
+    color:RGB(230, 230, 230);
+}
+.curicSAVEDchatBIGbox{
+    width:1100px;
+    height:720px;
+/*    border:solid black 1px;*/
+    margin-left:280px;
+    top:300px;
+    position: absolute;
+    border-radius:10px;
+    background-image: url("./curicimages/savedbackground.png");
+    z-index: 5;
+
+
+}
+.curicsavedchatstitle{
+    color:black;
+    font-weight:bold;
+    text-align:center;
+    margin-top:10px;
+    font-size:30pt;
+
+}
+.curicsavedchattext{
+    color:black;
+
+    text-align:center;
+    margin-top:10px;
+    font-size:16pt;
+    padding-left:40px;
+    padding-right:40px;
+}
+.curicsavedULTcontainer{
+    border: black solid 1px;
+    width:1000px;
+    height:500px;
+/*    position: absolute;*/
+    margin-top:15px;
+    position: relative;
+    margin-left:50px;
+    overflow-x: auto;
+}
+.curicsavedMINIboxes{
+    width:326px;
+    height:3000px;
+    border:black 1px solid;
+    float:left;
+    overflow-x: hidden;
+
+}
+.curicSAVEDFREEtitle{
+    color:black;
+    font-weight:bold;
+    font-size:18pt;
+    text-align:center;
+    margin-top:10px;
+
+}
+#curicSAVEDbuttonBACK{
+    margin-top:20px;
+    margin-left:45%;
+}
 
 
 
 /*Curriculum Media Query begins here */
 @media screen and (max-width:750px){
     .curicheader{
-        
+
         font-size:20pt;
-        
+
     }
     .curicsecondheader{
         font-size:12pt;
@@ -855,7 +1008,7 @@ body {
     .curicvidboxes{
         width: 500px;
         height:2000px;
-        
+
     }
     .curicpinkbox{
         margin-left:40px;
@@ -879,9 +1032,194 @@ body {
         top:1050px;
         left:52px;
     }
-   
-    
-    
+    #curicpinkbackground{
+        width:500px;
+        margin-left:0px;
+    }
+    #mediaQueryVideo1{
+        width:450px;
+
+        margin-left:-230px;
+    }
+    .curictextboxbig1{
+        width:250px;
+        margin-left:-230px;
+
+
+    }
+    .curicminititlebig1{
+        font-size:16pt;
+    }
+    .curicminitext{
+        font-size:10pt;
+    }
+    #curicgraybackgroundfin{
+        width:500px;
+        margin-left:0px;
+    }
+    #mediaQueryVideo2{
+        width:450px;
+        margin-left:-230px;
+    }
+    #curicorangebackgroundfin{
+        width:500px;
+        margin-left:0px;
+    }
+    #mediaQUeryVideo3{
+       width:450px;
+        margin-left:-230px;
+    }
+    .curictextboxbigorange1{
+        width:340px;
+        margin-left:-230px;
+    }
+    #curicquizbutposC{
+        position: absolute;
+        left:350px;
+
+    }
+    #curicquizbutpos1C{
+       position: absolute;
+        left:350px;
+    }
+    #curicquizbutpos2C{
+        position: absolute;
+        left:350px;
+    }
+    #curicquizbutpos3C{
+       position: absolute;
+        left:350px;
+    }
+    .curicquixboxright{
+        position: absolute;
+        top:300px;
+    }
+    .curicquiztext{
+        position: absolute;
+        top:300px;
+    }
+    .curicquixboxright2{
+        position: absolute;
+        top:300px;
+    }
+    .curichelptext{
+        position: absolute;
+        top:380px;
+    }
+    #curicpinkhelpaskbutton{
+        position: absolute;
+        left:300px;
+    }
+    .curicquixboxright3{
+        position: absolute;
+        top:300px;
+    }
+    .curicgrayquizboxright{
+        position: absolute;
+        top:570px;
+    }
+    .curicgrayboxtext{
+        position: absolute;
+        top:-1000px;
+    }
+    .curicgrayquizintro{
+       position: absolute;
+        top:-945px;
+    }
+    .curicgrayquizquestions{
+        position: absolute;
+        top:-900px;
+    }
+    #curicgraysubmitbutton{
+       position: absolute;
+        top:-340px;
+    }
+    .curicgrayhelpbox{
+        position: absolute;
+        left:450px;
+        top:50px;
+    }
+    .curicgrayhelpboxtext{
+        position: absolute;
+        top:730px;
+    }
+    #curicpinkhelpaskbox{
+        position: absolute;
+        top:500px;
+        left:600px;
+        z-index: 1;
+    }
+    #curicgrayhelpaskbutton{
+        position: absolute;
+        top:500px;
+    }
+    .curicgrayscriptboxtext{
+        position: absolute;
+        top:750px;
+        left:500px;
+
+    }
+    .curicgrayscriptintro{
+        width:300px;
+        left:-410px;
+    }
+    .curicorangequizbox{
+        position: absolute;
+        top:750px;
+        left:450px;
+    }
+    .curicgrayorangeintro{
+        width:400px;
+        left:-410px;
+    }
+    #curicorangesubmitbutton{
+        position: absolute;
+        top:490px;
+    }
+    .curicorangehelpbox{
+        position: absolute;
+        top:800px;
+        left:500px;
+    }
+    #curicgrayorangetextbox{
+        position: absolute;
+        top:500px;
+    }
+    .curicorangescriptbox{
+        position: absolute;
+        top:800px;
+        left:500px;
+    }
+    .curicorangescriptintro{
+        width:300px;
+        left:-410px;
+    }
+    .curicSAVEDchatBIGbox{
+        width:80%;
+        position: absolute;
+        left:-170px;
+    }
+    .curicsavedULTcontainer{
+        width:80%;
+    }
+    .curicsavedMINIboxes{
+        width:155px;;
+    }
+    .curicSAVEDFREEtitle{
+        font-size:80%;
+    }
+    #curicSAVEDbuttonBACK{
+        position: absolute;
+        top:650px;
+    }
+
+
+
+
+
+
+
+
 }
 /*end Curriculm style*/
 
@@ -961,7 +1299,7 @@ body {
 
 
 /* start of About Us style */
-        
+
 .meet{
     font-size: 50px;
     font-weight: bolder;
@@ -974,8 +1312,8 @@ body {
 
 /* included the Behind the Scenes in the About us page */
 
-   
-     
+
+
 .oneliner{
     font-size: 30px;
     font-weight: bold;
@@ -1020,7 +1358,7 @@ body {
 
 #Content{
     margin:auto;
-    
+
     text-align: center;
 }
 
@@ -1045,4 +1383,3 @@ body {
 
 
 /* End of Investor - Ant */
-
