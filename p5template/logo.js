@@ -9,7 +9,7 @@ function preload() {
 
 function setup() {
     let canv =   createCanvas(600, 200);
-    canv.position(200, windowHeight/2, 'static');
+    canv.position(50, -1100, 'relative');
     
 
     canv.background('rgba(0,255,0, 0)');
