@@ -245,11 +245,11 @@ body {
         }
         .audiofiles{
             border: 1px solid black;
-/*            visibility: hidden;*/
+            visibility: hidden;
         }
     /*styles for div animations */
         #investorboxLEFT{
-            border:1px solid black;
+/*            border:1px solid black;*/
             width:400px;
             height:400px;
             position: absolute;
@@ -257,7 +257,7 @@ body {
             left:50px;
         }
         #investorboxRIGHT{
-           border:1px solid black;
+/*           border:1px solid black;*/
             width:400px;
             height:400px;
             position: absolute;
@@ -691,6 +691,14 @@ We understand that this could increase our liability, and we will be evaluating 
             document.querySelector("#investgotchuslide1").currentTime = 0;
             document.querySelector("#investgotchuslide1").play();
             $("#investslide0").fadeIn();
+            
+            $("#gotchSPELLleft").animate({
+                "top" : "0px"
+            });
+            
+            $("#gotchSPELLright").animate({
+                "top" : "0px"
+            });
 
             
             $("#gotchSPELLleft").delay(1000).fadeIn().animate({
@@ -702,61 +710,59 @@ We understand that this could increase our liability, and we will be evaluating 
             },1000);
             
             
+                
+
+
             document.querySelector("#investgotchuslide1").onended = function(){
                 $("#investslide0").fadeOut();
                 $("#investslide1").fadeIn();
                 
-                $("#gotchSPELLleft").delay().animate({
-                "left" : "-300px"
-                    },500).fadeOut();
+                $("#gotchSPELLleft").delay(500).fadeOut();
             
-                $("#gotchSPELLright").delay().animate({
-                "left" : "300px"
-                    },500).fadeOut();
+                $("#gotchSPELLright").delay(500).fadeOut();
                 
-                
-                
-                $("#genabyLEFT").fadeIn().animate({
-                    "top" : "10px"
-                },1000).delay(1000).animate({
-                    "width" : "350px"
-                },500).animate({
-                    "width" : "300px"
-                },500);
-                
-                
-                
-                $("#genabyRIGHT").fadeIn().animate({
-                    "top" : "10px"
-                },1000).delay(1500).animate({
-                    "width" : "350px"
-                },500).animate({
-                    "width" : "300px"
-                },500);
-                
-
-
-            document.querySelector("#investgotchuslide1").onended = function(){
-                $("#investslide0").fadeOut();
-                $("#investslide1").fadeIn();
+                $("#genabyRIGHT").fadeIn()
+                $("#genabyLEFT").fadeIn() 
 
 
                 document.querySelector("#investgotchuslide2").play();
+                
+                    
+                    $("#genabyLEFT").animate({
+                        "top" : "0px"
+                    },500).delay(1000).animate({
+                        "width" : "350px"
+                    },500).animate({
+                        "width" : "300px"
+                    },500);
+                    
+                      $("#genabyRIGHT").animate({
+                        "top" : "0px"
+                    },500).delay(1500).animate({
+                          "width" : "350px"
+                      },500).animate({
+                          "width" : "300px"
+                      },500);
+//                    
+                   
+                
+                
+                
 
                 document.querySelector("#investgotchuslide2").onended = function(){
                     $("#investslide1").fadeOut();
                     $("#investslide2").fadeIn();
-
                     
-                    $("#genabyLEFT").animate({
-                        "top" : "-100px"
-                    },500).fadeOut();
+                     $("#genabyLEFT").animate({
+                        "width" : "0px"
+                    },500);
                     
                       $("#genabyRIGHT").animate({
-                        "top" : "-100px"
-                    },500).fadeOut();
+                        "width" : "0px"
+                    },500);
                     
-                    $("#gotchulogoLEFT").fadeIn().animate({
+                   
+                     $("#gotchulogoLEFT").fadeIn().animate({
                         "left" : "150px"
                     },1000);
                     
@@ -764,6 +770,7 @@ We understand that this could increase our liability, and we will be evaluating 
                     $("#gotchulogoRIGHT").fadeIn().animate({
                         "left" : "20px"
                     },1000);
+                    
                     
                     
                     
@@ -912,68 +919,51 @@ We understand that this could increase our liability, and we will be evaluating 
                                                  
                                                  $("#LEFTrevenue").delay(1000).animate({
                                                  "left" : "-300px"
-                                                 },1000).fadeOut;
+                                                 },1000).fadeOut();
                                                  
                                                  $("#graphRight").delay(1000).animate({
                                                     "right" : "-300px"
-                                                    },1000).fadeOut;
+                                                    },1000).fadeOut();
+                                                 
+                                                document.querySelector("#investgotchuslide10").play();
+                                                 
+                                                 $("#gotchulogoRIGHT").delay(2500).fadeIn().animate({
+                                                     "right" : "0px",
+                                                     "top" : "0px",
+                                                     "width" : "400px"
+                                                 },500);
+                                                 
+                                                 $("#gotchulogoLEFT").delay(2500).fadeIn().animate({
+                                                     "left" : "0px",
+                                                     "top" :"0px",
+                                                     "width" : "400px"
+                                                 },500);
+                                                 
+                                                 document.querySelector("#investgotchuslide10").onended = function(){
+                                                     $("#investslide9").fadeOut();
+                                                    $("#investslide10").fadeIn();
+                                                     
+                                                     $("#gotchulogoLEFT").delay(1000).fadeOut();
+                                                     $("#gotchulogoRIGHT").delay(1000).fadeOut();
+                                                 }
                                                  
 
 
-                             document.querySelector("#investgotchuslide5").play();
 
-                             document.querySelector("#investgotchuslide5").onended = function(){
-                                 $("#investslide4").fadeOut();
-                                 $("#investslide5").fadeIn();
-
-                                 document.querySelector("#investgotchuslide6").play();
-
-                                 document.querySelector("#investgotchuslide6").onended = function(){
-                                     $("#investslide5").fadeOut();
-                                     $("#investslide6").fadeIn();
-
-                                     document.querySelector("#investgotchuslide7").play();
-
-                                     document.querySelector("#investgotchuslide7").onended = function(){
-                                         $("#investslide6").fadeOut();
-                                         $("#investslide7").fadeIn();
-
-                                         document.querySelector("#investgotchuslide8").play();
-
-                                         document.querySelector("#investgotchuslide8").onended = function(){
-                                             $("#investslide7").fadeOut();
-                                             $("#investslide8").fadeIn();
-
-                                             document.querySelector("#investgotchuslide9").play();
-
-                                             document.querySelector("#investgotchuslide9").onended = function(){
-                                                 $("#investslide8").fadeOut();
-                                                 $("#investslide9").fadeIn();
-
-
-                                                 document.querySelector("#investgotchuslide10").play();
-
-                                                 document.querySelector("#investgotchuslide10").onended = function(){
-                                                     $("#investslide9").fadeOut();
-                                                     $("#investslide10").fadeIn();
-
-
-                                                 }
-
-
-                                             }
-                                         }
-
-                                        }
-                                    }
-                                }
-                            }
+                           
+                            
                         }
                     }
                 }
+            }
+                         
+                         }
+                    }
+                }
+            }
+            }
 
-
-
+                
 
         })
 
