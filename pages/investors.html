@@ -247,9 +247,119 @@ body {
         }
         .audiofiles{
             border: 1px solid black;
-            visibility: hidden;
+/*            visibility: hidden;*/
         }
-        
+    /*styles for div animations */
+        #investorboxLEFT{
+            border:1px solid black;
+            width:400px;
+            height:400px;
+            position: absolute;
+            top:190px;
+            left:50px;
+        }
+        #investorboxRIGHT{
+           border:1px solid black;
+            width:400px;
+            height:400px;
+            position: absolute;
+            top:190px;
+            right:50px; 
+        }
+        .investGotSPELL{
+            width:300px;
+            
+        }
+        #gotchSPELLleft{
+            position: absolute;
+            left:100px;
+            
+                
+        }
+        #gotchSPELLright{
+            position: absolute;
+            left:0px;
+        }
+        .genAB{
+            width:300px;
+        }
+        #genabyLEFT{
+            position: absolute;
+            top:200px;
+            left:100px;
+        }
+        #genabyRIGHT{
+           position: absolute;
+            top:200px;
+             
+        }
+        .gotchuLOGO{
+            width:250px;
+        }
+        #gotchulogoRIGHT{
+            position: absolute;
+            left:300px;
+            top:50px;
+        }
+        #gotchulogoLEFT{
+           position: absolute;
+            right:300px;
+            top:50px; 
+        }
+        #frushgRIGHT{
+            position: absolute;
+            width:300px;
+            top:290px;
+            left:100px;
+            
+                
+        }
+        #clientgLEFT{
+            position: absolute;
+            width:300px;
+            top:215px;
+        }
+        #bubbleLEFT{
+            position: absolute;
+            width: 400px;
+            left:-400px;
+/*            left:0px;*/
+            top:0px;
+        }
+        #bubbleRIGHT{
+            position: absolute;
+            width:400px;
+            left:400px;
+            top:0px;
+        }
+        #graphLEFT{
+            width:400px;
+            position: absolute;
+            top:0px;
+            
+        }
+        #graphRight{
+            width:400px;
+            position: absolute;
+            top:350px;
+        }
+        #whatnextLEFT{
+            width:10px;
+            position: absolute;
+            left:50px;
+            top:150px;
+        }
+        #whatnextRIGHT{
+            width:10px;
+            position: absolute;
+            right:50px;
+            top:150px;
+        }
+        #LEFTrevenue{
+            width:400px;
+            position: absolute;
+            top:270px;
+        }
 
         
         
@@ -342,6 +452,29 @@ body {
             </div>
     <!-- SLIDE ACTIVATION BUTTON -->
             <div class="investplaybutton" id="investplaybuttonpitch">Play Pitch</div>
+            
+    <!-- DIV ANIMATIONS -->
+            <div id="investorboxLEFT">
+                <div><img class="investGotSPELL" id="gotchSPELLleft" src="../gotchuphotos/GotchSpell.png"></div>
+                <img class="genAB" id="genabyLEFT"src="../gotchuphotos/jenabbyphoto.png">
+                <img class="gotchuLOGO" id="gotchulogoLEFT" src="../gotchuphotos/gotchuLogo.png">
+                <img class="FRUSHg" id="frushgRIGHT" src="../gotchuphotos/EgotFRUSH.png">
+                <img id="bubbleLEFT" src="../gotchuphotos/gotchuBarriers.png">
+                <img id="graphLEFT" src="../gotchuphotos/investgraphLEFT.png">
+                <img id="whatnextLEFT" src="../gotchuphotos/whatsnext.png">
+                <img id="LEFTrevenue" src="../gotchuphotos/revenueLEFT.png">
+                
+            
+            </div>
+            <div id="investorboxRIGHT">
+                <img class="investGotSPELL" id="gotchSPELLright" src="../gotchuphotos/GotchSpell.png">
+                <img class="genAB" id="genabyRIGHT"src="../gotchuphotos/jenabbyphoto.png">
+                <img class="gotchuLOGO" id="gotchulogoRIGHT" src="../gotchuphotos/gotchuLogo.png">
+                <img class="CLIENTg" id="clientgLEFT" src="../gotchuphotos/EgotCLIENT.png">
+                <img id="bubbleRIGHT" src="../gotchuphotos/bubbleRIGHT.png">
+                <img id="graphRight" src="../gotchuphotos/investgraphRIGHT.png">
+                 <img id="whatnextRIGHT" src="../gotchuphotos/whatsnext.png">
+            </div>
             
         <br>
             
@@ -497,6 +630,7 @@ We understand that this could increase our liability, and we will be evaluating 
             }
     </script>
     <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="http://iyawebdev.com/jqm.js"></script>
     <script>
         $(document).ready(function(){
             $("#investslide0").show();
@@ -513,6 +647,32 @@ We understand that this could increase our liability, and we will be evaluating 
             $("#investslide9").hide();
             $("#investslide10").hide();
             
+            //animations
+            $("#gotchSPELLleft").hide();
+            $("#gotchSPELLright").hide();
+            
+            $("#genabyLEFT").hide();
+            $("#genabyRIGHT").hide();
+            
+            $("#gotchulogoLEFT").hide();
+            $("#gotchulogoRIGHT").hide();
+            
+            $("#frushgRIGHT").hide()
+            $("#clientgLEFT").hide()
+            
+            $("#bubbleLEFT").hide();
+            $("#bubbleRIGHT").hide();
+            
+            $("#graphLEFT").hide();
+            $("#graphRight").hide();
+            
+            $("#whatnextLEFT").hide();
+            $("#whatnextRIGHT").hide();
+            
+            $("#LEFTrevenue").hide();
+            
+            
+            
             
         });
         
@@ -524,9 +684,46 @@ We understand that this could increase our liability, and we will be evaluating 
             document.querySelector("#investgotchuslide1").play();
             $("#investslide0").fadeIn();
             
+            $("#gotchSPELLleft").delay(1000).fadeIn().animate({
+                "top" : "100px"
+            },1000);
+            
+            $("#gotchSPELLright").delay(1000).fadeIn().animate({
+                "top" : "100px"
+            },1000);
+            
+            
             document.querySelector("#investgotchuslide1").onended = function(){
                 $("#investslide0").fadeOut();
                 $("#investslide1").fadeIn();
+                
+                $("#gotchSPELLleft").delay().animate({
+                "left" : "-300px"
+                    },500).fadeOut();
+            
+                $("#gotchSPELLright").delay().animate({
+                "left" : "300px"
+                    },500).fadeOut();
+                
+                
+                
+                $("#genabyLEFT").fadeIn().animate({
+                    "top" : "10px"
+                },1000).delay(1000).animate({
+                    "width" : "350px"
+                },500).animate({
+                    "width" : "300px"
+                },500);
+                
+                
+                
+                $("#genabyRIGHT").fadeIn().animate({
+                    "top" : "10px"
+                },1000).delay(1500).animate({
+                    "width" : "350px"
+                },500).animate({
+                    "width" : "300px"
+                },500);
                 
                 document.querySelector("#investgotchuslide2").play();
                 
@@ -534,11 +731,58 @@ We understand that this could increase our liability, and we will be evaluating 
                     $("#investslide1").fadeOut();
                     $("#investslide2").fadeIn();
                     
+                    $("#genabyLEFT").animate({
+                        "top" : "-100px"
+                    },500).fadeOut();
+                    
+                      $("#genabyRIGHT").animate({
+                        "top" : "-100px"
+                    },500).fadeOut();
+                    
+                    $("#gotchulogoLEFT").fadeIn().animate({
+                        "left" : "150px"
+                    },1000);
+                    
+                    
+                    $("#gotchulogoRIGHT").fadeIn().animate({
+                        "left" : "20px"
+                    },1000);
+                    
+                    
+                    
                     document.querySelector("#investgotchuslide3").play();
                     
                     document.querySelector("#investgotchuslide3").onended = function(){
                          $("#investslide2").fadeOut();
                          $("#investslide3").fadeIn();
+                        
+                        $("#gotchulogoLEFT").delay(1000).animate({
+                            "top" : "10px"
+                        },500).delay(300).animate({
+                            "top" : "80px"
+                        },500).delay(300).animate({
+                            "top" : "10px"
+                        },500).delay(300).animate({
+                            "top" : "80px"
+                        },500).delay(300).animate({
+                            "top" : "10px"
+                        },500).delay(300).animate({
+                            "top" :"20px"
+                        },500)
+                        
+                        $("#gotchulogoRIGHT").delay(1000).animate({
+                            "top" : "80px"
+                        },500).delay(300).animate({
+                            "top" : "10px"
+                        },500).delay(300).animate({
+                            "top" : "80px"
+                        },500).delay(300).animate({
+                            "top" : "10px"
+                        },500).delay(300).animate({
+                            "top" : "80px"
+                        },500).delay(300).animate({
+                            "top" : "20px"
+                        },500)
                         
                          document.querySelector("#investgotchuslide4").play();
                         
@@ -546,35 +790,111 @@ We understand that this could increase our liability, and we will be evaluating 
                              $("#investslide3").fadeOut();
                              $("#investslide4").fadeIn();
                              
+                             
+                             
                              document.querySelector("#investgotchuslide5").play();
+                                $("#gotchulogoRIGHT").delay(110000).fadeOut();
+                                $("#gotchulogoLEFT").delay(4000).fadeOut();
+                             
+                                $("#frushgRIGHT").delay(4000).fadeIn().animate({
+                                    "top" : "80px"
+                                },700);
+                            
+                                $("#clientgLEFT").delay(114000).fadeIn().animate({
+                                    "top" : "60px"
+                                },700);
+                             
+                             
+                             
+                            
                              
                              document.querySelector("#investgotchuslide5").onended = function(){
                                  $("#investslide4").fadeOut();
                                  $("#investslide5").fadeIn();
+                                 
+                                 $("#clientgLEFT").fadeOut();
+                                  $("#frushgRIGHT").fadeOut();
                              
                                  document.querySelector("#investgotchuslide6").play();
+                                 
+                                  $("#bubbleLEFT").delay(2000).fadeIn().animate({
+                                      "left" : "10px"
+                                  },500);
+                                 
+                                 $("#bubbleRIGHT").delay(4000).fadeIn().animate({
+                                     "left" : "-10px"
+                                 });
                                  
                                  document.querySelector("#investgotchuslide6").onended = function(){
                                      $("#investslide5").fadeOut();
                                      $("#investslide6").fadeIn();
                                      
+                                     $("#bubbleLEFT").fadeOut();
+                                     $("#bubbleRIGHT").fadeOut();
+                                     
+                                     $("#whatnextLEFT").fadeIn();
+                                     $("#whatnextRIGHT").fadeIn();
+                                     
                                      document.querySelector("#investgotchuslide7").play();
+                                     
+                                     $("#whatnextLEFT").delay(1000).animate({
+                                         "width" : "300px"
+                                     },1000);
+                                     $("#whatnextRIGHT").delay(1000).animate({
+                                         "width" : "300px"
+                                     },1000);
+                                     
                                      
                                      document.querySelector("#investgotchuslide7").onended = function(){
                                          $("#investslide6").fadeOut();
                                          $("#investslide7").fadeIn();
                                          
+                                         $("#whatnextLEFT").animate({
+                                         "width" : "10px"
+                                            },1000).fadeOut();
+                                         
+                                        $("#whatnextRIGHT").animate({
+                                         "width" : "10px"
+                                            },1000).fadeOut();
+                                         
+                                         
+                                         
+                                         
                                          document.querySelector("#investgotchuslide8").play();
+                                         
+                                         $("#graphLEFT").delay(1000).fadeIn().animate({
+                                         "top" : "50px"
+                                            },1000);
+                                     
+                                        $("#graphRight").delay(3000).fadeIn().animate({
+                                         "top" : "50px"
+                                            },1000);
                                          
                                          document.querySelector("#investgotchuslide8").onended = function(){
                                              $("#investslide7").fadeOut();
                                              $("#investslide8").fadeIn();
                                              
+                                             $("#graphLEFT").fadeOut()
+                                             
+                                             $("#LEFTrevenue").fadeIn();
+                                             
                                              document.querySelector("#investgotchuslide9").play();
+                                             
+                                             $("#LEFTrevenue").delay(1000).animate({
+                                                 "top" : "50px"
+                                             },1000);
                                              
                                              document.querySelector("#investgotchuslide9").onended = function(){
                                                  $("#investslide8").fadeOut();
                                                  $("#investslide9").fadeIn();
+                                                 
+                                                 $("#LEFTrevenue").delay(1000).animate({
+                                                 "left" : "-300px"
+                                                 },1000).fadeOut;
+                                                 
+                                                 $("#graphRight").delay(1000).animate({
+                                                    "right" : "-300px"
+                                                    },1000).fadeOut;
                                                  
                                                  document.querySelector("#investgotchuslide10").play();
                                                 
